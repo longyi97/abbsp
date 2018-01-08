@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+ 
+  <display-name>Ruiec Tags</display-name>
+  <tlib-version>1.0</tlib-version>
+  <short-name>ruiec</short-name>
+  <uri>/ruiec-tags</uri>
+
+	<tag>
+	    <name>hasPerms</name>
+	    <tag-class>com.ruiec.web.template.jsp.directive.HasPermsTag</tag-class>
+	    <body-content>scriptless</body-content>
+	    <attribute>
+	      <name>perms</name>
+	      <required>true</required>
+	      <rtexprvalue>true</rtexprvalue>
+	    </attribute>
+	</tag>
+	
+	<tag>
+		<name>date</name>
+		<tag-class>com.ruiec.web.template.jsp.directive.DateTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>startDate</name>
+	    	<required>true</required>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>endDate</name>
+	    	<required>true</required>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>type</name>
+	    	<required>true</required>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>var</name>
+	    	<required>true</required>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>module</name>
+		<tag-class>com.ruiec.web.template.jsp.directive.ModuleTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>parentId</name>
+	    	<type>java.lang.Integer</type>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>var</name>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>department</name>
+		<tag-class>com.ruiec.web.template.jsp.directive.DepartmentTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>parentId</name>
+	    	<type>java.lang.Integer</type>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>var</name>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	
+	<tag>
+		<name>user</name>
+		<tag-class>com.ruiec.web.template.jsp.directive.UserTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>userId</name>
+	    	<type>java.lang.Integer</type>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>var</name>
+	    	<required>true</required>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag><!-- 查询回复帖子 -->
+		<name>replyArticle</name>
+		<tag-class>com.ruiec.web.template.jsp.directive.ReplyArticleTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>replyArticleId</name>
+	    	<type>java.lang.Integer</type>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>var</name>
+	    	<required>true</required>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+
+	<tag><!-- 前台菜单 -->
+		<name>homeMeun</name>
+		<tag-class>com.ruiec.web.template.jsp.directive.HomeMenuTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>moduleId</name>
+	    	<required>true</required>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>var</name>
+	    	<required>true</required>
+	    	<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+</taglib>

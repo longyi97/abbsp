@@ -1,0 +1,286 @@
+
+/** 通用CSS样式 **/
+*{margin:0px; padding:0px; _min-height:1px;list-style: none;font-family:"微软雅黑"; }
+a{ color:#333}
+a, body, div, html, img, li, ul,dl,dt,dd { border: 0; margin: 0; padding: 0; text-decoration:none;}
+html, body { margin:0 auto; height:auto; width:100%; overflow-x:hidden; font:10px  'Microsoft YaHei','Helvetica Neue', Arial,\5b8b\4f53,'Liberation Sans', FreeSans, sans-serif;  padding:0px; display:block; color:#333; }
+body{ position: relative; min-width: 1560px; overflow:hidden;background:#fff; margin:0 auto;font-size:12px;  }
+img { color: transparent; font-size:12px;  -ms-interpolation-mode: bicubic; }
+ol, ul ,dl ,dt,dd{ list-style: none;  }
+input{ padding: 0 6px; outline:none; font-family:'Microsoft YaHei'; }
+a{ cursor:pointer;  }
+em, i, b, sub, sup { font-style: normal; }
+input{ border:0px; outline:none; font-family:"微软雅黑"; vertical-align:middle; }
+input[type='text']{border:1px solid #dcdcdc; padding:0px 5px; height:30px; line-height:30px; font-size:12px }
+input[type='password']{border:1px solid #dcdcdc; padding:0px 5px;height:30px; line-height:30px;font-size:12px }
+input[type='submit']{ cursor:pointer; color:#fff ;}
+textarea{border:1px solid #ccc; padding:5px;}
+select{border:1px solid #d8dde6; padding:0px 5px; height:28px; line-height:28px;font-size:12px; font-family:"微软雅黑"; }
+table{border-collapse: collapse; width:100%; }
+.btn_red{ background:#e84343; color:#fff;}
+.btn_red:hover{ background:#ce0f0f !important}
+.btn_org{ background:#ff6600; color:#fff;}
+.btn_org:hover{ background:#fa7e2c !important}
+.text-line{ text-decoration:none; border-radius: 20px;border:2px solid #e8e0dd; height: 36px; display: inline-block; text-align: center; line-height:36px;width:104px; overflow: hidden;}
+/*input::-webkit-input-placeholder {
+    color:    #fff;
+}
+input:-moz-placeholder {
+    color:    #fff;
+}*/
+/********淇敼婊氬姩鏉�********/
+.The_recent_conter::-webkit-scrollbar/*鏁翠綋閮ㄥ垎*/
+{
+width: 5px;
+height:10px;
+} 
+.The_recent_conter::-webkit-scrollbar-track/*婊戝姩杞ㄩ亾*/
+{
+border-radius: 0px;
+background: #0a407c ;
+} 
+.The_recent_conter::-webkit-scrollbar-thumb/*婊戝潡*/
+{
+background: #22a3e2;
+}
+/********淇敼婊氬姩鏉�********/
+/** 閫氱敤CSS鏍峰紡 **/
+.wrap{ overflow: hidden;}
+.point{ cursor: pointer;}
+.ellipsis{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.wraper{ padding: 30px 0; overflow: hidden;}
+.bg_bfa{ background-color: #fdfbfa;}
+.bg_b62{ background-color: #db5b62;}
+.bg_ae8{ background-color: #efeae8;}
+.bg_d4d{ background-color: #e5c18b;}
+.bg_4d2{ background-color: #dbd4d2;}
+.bg_4f2{ background-color: #f7f4f2;}
+.bg_78e{ background-color: #ad978e;}
+.c_a46{color: #a4652f;}
+.c_78e{ color: #ad978e;}
+.c_c36{ color: #623218;}
+.bg_0dd{ background-color: #e8e0dd;}
+.c_e4e{ color: #e54e4e;}
+.c_754{ color: #655754;}
+.c_a3e{ color: #664a3e;}
+.mgt30{ margin-top: 30px !important;}
+.mgl35{ margin-left: 35px;}
+.btn{ display: block; padding: 11px 15px; text-align: center; background-color: #db5b62; border-radius: 5px; color: #fff; font-size: 16px; margin: 2px; overflow: hidden;}
+.ty_text{color: #655754; font-size: 14px; width: 56px; height: 25px; background-color: #e8e0dd; background-color: #dbd3ce; border-radius: 5px; margin-right: 5px; color: #655754; font-size: 14px; overflow: hidden;}
+.bor_bom{ border: 0px !important;}
+/** 甯哥敤鍏叡鏍峰紡 **/
+.Hauto{ height: auto !important;}
+.fl{ float:left; }
+.fr{ float:right; }
+.clr{ clear:both; overflow:hidden; height:0px; font-size:0px; display:block; }
+.textl{ text-align:left; }
+.textr{ text-align:right; }
+.indent{ text-indent:20px; }
+.lh24{ line-height:24px; }
+.tc{ text-align:center; }
+.fb{ font-weight:bolder; }
+.btt0{ border-top:0px !important; }
+.btt{ border-top:1px solid #ddd; }
+.bbt{ border-bottom:1px solid #ddd; }
+.bbl{ border-left:1px solid #ddd; }
+.bbr{ border-right:1px solid #ddd; }
+.b0{ border:0px!important; }
+.b1{ border:1px solid #ddd; }
+.red{ color:#ac0c0c;}
+.gray{ color:#69667a;}
+.blue{ color:#079dff; }
+.c_d4d{ color: #e53534;}
+.c_e8{ color:#e84343;}
+.c_b24{ color:#24b7ec !important;}
+.c_yell{ color:#edee6c; } 
+.c_3{ color:#333 !important; }
+.c_5{ color:#555!important; }
+.c_6{ color:#666!important; }
+.c_8{ color:#888!important; }
+.c_9{ color:#9fa0a0; }
+.c_e1{ color:#e1e1e1; }
+.c_a2{ color:#a2acb3; } 
+.c_red{ color:#f47564 !important; }
+.c_blue{ color:#005aa9 !important; } 
+.c_green{ color:#71bd71 !important; }
+.c_fenhong{ color:#d3022a;}
+.c_zise{ color:#9d209e; }
+.c_org{ color:#f39700; }
+.c_a0{ color:#900; }
+.c_gray{ color:#c8b897!important;} /** 鐏拌壊 **/
+.c_hese{ color:#63514f!important; } /** 鐏拌鑹� **/
+.c_lanse{ color:#005bac; } 
+.c_huibai{ color:#a2acb3; } /* 鐏扮櫧鑹� */
+.c_hailan{ color:#358DE6; }
+.c_btop{ color: #7fddfa !important;}  /**/
+.c_e2{ color: #22a3e2;}
+.c_a5{ color: #196aa5 !important;}
+.bg_07c{ background-color: #0a407c !important;}
+.bgc_a5{ background-color: #196aa5 !important;}
+.bgc_c{ background-color:#ccc; }
+.bg_none{ background:none !important; }
+.bg_wite{ background-color:#fff; }
+.bgc_red{ background-color:#e84343 !important; } 
+.bgc_blue{ background-color:#4590e7 !important; }  
+.bgc_green{ background-color:#6eb92b; }
+.bgc_fenhong{ background-color:#fd7d83; } 
+.bgc_yellow{ background-color:#f3bf5a; } 
+.bgc_blue2{ background-color:#29285f; } 
+.bgc_pink{background-color:#e89bb6; }
+.bgc_gray{background-color:#dcdcdc !important; }
+.bg_org{background:#ff9102 !important; }  
+.disblock{ display:block; }
+.fz12{ font-size:12px!important; }
+.fz_13{ font-size:13px!important;}
+.fz14{ font-size:14px!important; }
+.fz16{ font-size:16px; }
+.fz18{ font-size:18px; }
+.fz20{ font-size:20px; }
+.fz22{ font-size:22px; }
+.fz24{ font-size:24px; }
+.fz26{ font-size:26px; }
+.fz30{ font-size:30px; }
+.fz36{ font-size:36px; }
+.fw_500{ font-weight:500!important; }
+.fw_600{ font-weight:600; }
+.fm_weiruan{ font-family:"寰蒋闆呴粦"; }
+.fm_songti{ font-family:"瀹嬩綋"; }
+.fm_en{ font-family:Verdana, Geneva, sans-serif; }
+.fm_numb{ font-family:Arial, Helvetica, sans-serif; }
+.AllW{ width:100%; }
+.h10{ height:10px;}
+.h20{ height:20px;}
+.lh20{ line-height:20px; }
+.lh24{ line-height:24px; }
+.h24{ height:24px; }
+.lh30{ line-height:30px; }
+.h30{ height:30px; }
+.lh35{ line-height:35px; }
+.h35{ height:35px; }
+.lh40{ line-height:40px; }
+.h40{ height:40px; }
+.blod{ font-weight:bold; }
+.spcing5{ width:100%; height:5px; overflow:hidden; clear:both; }
+.spcing10{ height:10px; clear:both; width:100%; }
+.spcing15{ height:15px; clear:both; width:100%; }
+.spcing20{ height:20px; clear:both; width:100%; }
+.spcing40{ height:40px; clear:both; width:100%; }
+.spcing80{ height:80px; clear:both; width:100%; }
+.padd2{ width:auto; padding:2px; height:auto; overflow:hidden; }
+.clearance{ width:10px; height:100%; float:left; }
+.mgt0{ margin-top:0px!important; }
+.mgt10{ margin-top:10px!important; }
+.mgt3{ margin-top:3px!important; }
+.mgb0{ margin-bottom:0px!important; }
+.mgb15{ margin-bottom:15px!important; }
+.mgb45{ margin-bottom:45px!important; }
+.mgt5{ margin-top:5px; }
+.mgt10{ margin-top:10px; }
+.mgt15{ margin-top:15px !important; } 
+.mgt20{ margin-top:20px; } 
+.mgr5{ margin-right:5px; } 
+.mgr10{ margin-right:10px; } 
+.mgr15{ margin-right:15px; } 
+.mgr20{ margin-right:20px; } 
+.mgr40{ margin-right:40px; } 
+.mgl5{ margin-left:5px; } 
+.mgl20{ margin-left:20px; } 
+.mgl10{ margin-left:10px; } 
+.c_wite{ color:#fff; }
+.c_f10{ color: #fff100 !important;}
+.c_0{ color:#000; }
+.pd{ padding:0px !important}
+.pdl5{ padding-left:5px; }
+.pdl10{ padding-left:10px; }
+.pdr5{ padding-right:5px; }
+.pdr10{ padding-right:10px; }
+.pdt5{ padding-top:5px; }
+.pdt10{ padding-top:10px; } 
+.pdb5{ padding-bottom:5px; }
+.pdb10{ padding-bottom:10px !important; } 
+.pdb30{ padding-bottom:30px !important; } 
+.over_hide{ overflow:hidden; }
+.w500{ width:500px;}
+.w833{ width:833px; margin: 0 auto;}
+.w940{ width:940px; margin:0px auto; height:auto; overflow:hidden; }
+.w1004{ width:1004px; margin:0px auto; height:auto; overflow:hidden; }
+.w1100{ width:1100px; margin:0px auto; height:auto; overflow:hidden; }
+.w1000{ width:1000px; margin:0px auto; height:auto; overflow:hidden; }
+.w1200{ width:1200px; margin:0px auto; height:auto; overflow:hidden;}
+.w915{width:915px; margin:0px auto; height:auto; overflow:hidden;}
+.pos-absol{ position:absolute; display:block; } 
+.w_50_pct{ width:50%;}    
+.hideThis{ display:none;}
+.clearfix{ width:100%; height:auto; overflow:hidden; clear:both; }
+.linethrow{ text-decoration:line-through; } 
+.italic{ font-style:italic;}
+.undeline{ text-decoration:underline; }
+.boxShadow{box-shadow:5px 5px 10px #999; -webkit-box-shadow:5px 5px 10px #999; -moz-box-shadow:5px 5px 10px #999;}
+.center{text-align:center; margin:0 auto; display:block;}
+.arrow_up {    width: 0px;
+    height: 0px;
+    border-width: 0px 5px 5px 5px;
+    border-color: transparent transparent #666 transparent;
+    border-style: solid;}
+.arrow_up.curr {    width: 0px;
+    height: 0px;
+    border-width: 0px 5px 5px 5px;
+    border-color: transparent transparent #df0520 transparent;
+    border-style: solid;}
+ /*绠ご鍚戜笅*/
+.arrow_down {width:0; height:0; border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #666;}
+.arrow_down.curr {width:0; height:0; border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #df0520;}
+ /*绠ご鍚戝乏*/
+.arrow_left {width:0; height:0; border-top:5px solid transparent;border-bottom:5px solid transparent; border-right:5px solid yellow; }
+/*绠ご鍚戝彸*/
+.arrow_right {width:0; height:0; border-top:5px solid transparent;border-bottom: 5px solid transparent;border-left: 5px solid green;}
+/** 甯哥敤鍏叡鏍峰紡 **/
+
+/** iconfont CSS鏍峰紡 **/
+@font-face {font-family: '../iconfont/iconfont';
+    src: url('../iconfont/iconfont.eot'); /* IE9*/
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/iconfont.woff') format('woff'), /* chrome銆乫irefox */
+    url('../iconfont/iconfont.ttf') format('truetype'), /* chrome銆乫irefox銆乷pera銆丼afari, Android, iOS 4.2+*/
+    url('../iconfont/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"../iconfont/iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+ 
+/** iconfont CSS鏍峰紡 end **/
+
+.page_ubox{overflow: hidden; text-align:center}
+.page_ubox a{ border:1px solid #ddd; padding:0px 10px; height:25px; line-height:25px;    display: inline-block;}
+.page_ubox a.curr{ background:#e84343; border:1px solid #e84343; color:#fff}
+.page_ubox a:hover{ background:#e84343; border:1px solid #e84343; color:#fff}
+.page_ubox span{ line-height:25px; margin:0px 5px; } 
+.page_ubox span i{ float:left; line-height:27px;}
+.page_ubox span input{height:25px; line-height:25px; width:30px;border:1px solid #ddd; background:none; margin:0px 5px; }
+.page_ubox input[type='submit']{border: 1px solid #3190e8;padding: 5px 10px;float: left;margin-left: 5px; background:#3190e8; color:#fff; border-radius:6px;}
+/*************鍒嗛〉***********/
+.page{ margin-bottom: 40px; overflow: hidden;}
+.page ul{ float: right; overflow: hidden;}
+.page ul li{ margin-left: 8px; width: 28px; height: 29px; text-align: center; line-height: 29px; border-radius: 5px; background-color: #031f3e; float: left;}
+.page ul li a{ display: block; color: #fff;}
+.page ul li:hover,
+.page ul .curr{ background-color: #22a3e2 !important;}
+/*************鍒嗛〉***********/
+
+
+/*************WebUploader***********/
+/*=====================浠ヤ笅閮ㄥ垎鏄疻ebUploader蹇呴』鐨�====================*/
+.webuploader-container{ position:relative; }
+.webuploader-element-invisible{ position:absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px,1px,1px,1px); }
+.webuploader-pick{ position:relative; display:inline-block; cursor:pointer; background:#fff; color:#da251d; overflow:hidden; zoom:1; *display:inline; }
+.webuploader-pick-hover{ background:#fafafa; }
+.webuploader-pick-disable{ opacity:0.6; pointer-events:none; }
+
+.addAttachment .webuploader-pick{ position:relative; display:inline-block; width:100%;  height:100%; border:0; cursor:pointer; background:#fff; color:#333; text-align:center; overflow:hidden; zoom:1; *display:inline; }
+/*=====================浠ヤ笂閮ㄥ垎鏄疻ebUploader蹇呴』鐨�====================*/
+.img-show .pic-data{display:block;float:left;}
+.img-show span.fl{ margin:70px 0px 0px 5px;}
+/*************WebUploader***********/

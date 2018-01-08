@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigations>
+
+<!-- 顶级导航start -->
+	<navigation id="2" name="网站管理" parentId="" level="1" sort="2" isShow="1" link="" image=""/>
+<!-- 顶级导航end -->
+
+<!-- 二级导航start -->
+	<navigation id="221" name="用户管理" parentId="2" level="2" sort="1" isShow="1" link="/admin/user/list.shtml" image=""/>
+	<navigation id="222" name="部门管理" parentId="2" level="2" sort="2" isShow="1" link="/admin/department/list.shtml" image=""/>
+	<navigation id="223" name="版块管理" parentId="2" level="2" sort="3" isShow="1" link="/admin/module/list.shtml" image=""/>
+	<navigation id="225" name="帖子管理" parentId="2" level="2" sort="5" isShow="1" link="/admin/article/list.shtml" image=""/>
+	<navigation id="226" name="回复管理" parentId="2" level="2" sort="6" isShow="1" link="/admin/articleReplay/list.shtml" image=""/>
+	<navigation id="227" name="积分管理" parentId="2" level="2" sort="7" isShow="1" link="" image=""/>
+	<navigation id="228" name="签到管理" parentId="2" level="2" sort="9" isShow="1" link="" image=""/>
+	<navigation id="231" name="系统配置" parentId="2" level="2" sort="11" isShow="1" link="/admin/config/edit.shtml" image=""/>
+	<navigation id="232" name="附件管理" parentId="2" level="2" sort="12" isShow="1" link="/admin/articleAttachment/list.shtml" image=""/>
+<!-- 二级导航end -->
+
+<!-- 三级导航start -->
+	<navigation id="22731" name="积分管理" parentId="227" level="3" sort="1" isShow="1" link="/admin/userPoints/list.shtml" image=""/>
+	<navigation id="22732" name="积分明细管理" parentId="227" level="3" sort="2" isShow="1" link="/admin/userPointsDetail/list.shtml" image=""/>
+	
+	<navigation id="22831" name="签到管理" parentId="228" level="3" sort="1" isShow="1" link="/admin/userSign/list.shtml" image=""/>
+	<navigation id="22832" name="签到规则管理" parentId="228" level="3" sort="2" isShow="1" link="/admin/signRule/list.shtml" image=""/>
+	<navigation id="22833" name="签到明细管理" parentId="228" level="3" sort="3" isShow="1" link="/admin/userSignDetail/list.shtml" image=""/>
+<!-- 三级导航end -->
+
+<!-- 四级导航start -->
+
+<!-- 四级导航end -->
+
+</navigations>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruiec.web.dao.DepartmentUserMapper">
+  <resultMap id="BaseResultMap" type="com.ruiec.web.model.DepartmentUser">
+    <result column="department_id" jdbcType="INTEGER" property="departmentId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+  </resultMap>
+   <sql id="Base_Column_List">
+   department_id,user_id
+  </sql>
+  <delete id="deleteByPrimaryKeys">
+    delete from ruiec_department_user where user_id in
+  	 <foreach item="item" index="index" collection="array" open="(" separator="," close=")">
+     	#{item}
+  	 </foreach> 
+  </delete>
+  
+  <insert id="insert" parameterType="com.ruiec.web.model.DepartmentUser">
+    insert into ruiec_department_user (department_id, user_id)
+    values (#{departmentId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ruiec.web.model.DepartmentUser">
+    insert into ruiec_department_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="departmentId != null">
+        department_id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="departmentId != null">
+        #{departmentId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.ruiec.web.model.DepartmentUser">
+    update ruiec_department_user
+    set 
+      department_id = #{departmentId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <!-- zgc -->
+  <select id="selectByDepartmentId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select  
+    <include refid="Base_Column_List" />
+    from ruiec_department_user  where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+   <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select department_id,user_id
+    from ruiec_department_user 
+  </select>
+  <!-- zgc -->
+</mapper>

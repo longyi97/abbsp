@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruiec.web.dao.UserPointsDetailMapper">
+  <resultMap id="BaseResultMap" type="com.ruiec.web.model.UserPointsDetail">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="item" jdbcType="VARCHAR" property="item" />
+    <result column="change_points" jdbcType="REAL" property="changePoints" />
+    <result column="current_points" jdbcType="REAL" property="currentPoints" />
+    <result column="selectWho" jdbcType="INTEGER" property="selectWho" />
+    <result column="selectContent" jdbcType="VARCHAR" property="selectContent"/>
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, create_time, modify_time, user_id, item, change_points, current_points
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from ruiec_user_points_detail
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from ruiec_user_points_detail
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ruiec.web.model.UserPointsDetail">
+    insert into ruiec_user_points_detail (id, create_time, modify_time, 
+      user_id, item, change_points, 
+      current_points)
+    values (#{id,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP}, 
+      #{userId,jdbcType=INTEGER}, #{item,jdbcType=VARCHAR}, #{changePoints,jdbcType=REAL}, 
+      #{currentPoints,jdbcType=REAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ruiec.web.model.UserPointsDetail">
+    insert into ruiec_user_points_detail
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="modifyTime != null">
+        modify_time,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="item != null">
+        item,
+      </if>
+      <if test="changePoints != null">
+        change_points,
+      </if>
+      <if test="currentPoints != null">
+        current_points,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="item != null">
+        #{item,jdbcType=VARCHAR},
+      </if>
+      <if test="changePoints != null">
+        #{changePoints,jdbcType=REAL},
+      </if>
+      <if test="currentPoints != null">
+        #{currentPoints,jdbcType=REAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ruiec.web.model.UserPointsDetail">
+    update ruiec_user_points_detail
+    <set>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="item != null">
+        item = #{item,jdbcType=VARCHAR},
+      </if>
+      <if test="changePoints != null">
+        change_points = #{changePoints,jdbcType=REAL},
+      </if>
+      <if test="currentPoints != null">
+        current_points = #{currentPoints,jdbcType=REAL},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ruiec.web.model.UserPointsDetail">
+    update ruiec_user_points_detail
+    set create_time = #{createTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      user_id = #{userId,jdbcType=INTEGER},
+      item = #{item,jdbcType=VARCHAR},
+      change_points = #{changePoints,jdbcType=REAL},
+      current_points = #{currentPoints,jdbcType=REAL}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+  <!-- ZhiyongGuo -->
+  <sql id="Table_Name">
+  	ruiec_user_points_detail
+  </sql>
+  
+  <select id="selectAll" resultMap="BaseResultMap">
+    SELECT 
+    <include refid="Base_Column_List" />
+    FROM
+    <include refid="Table_Name" />
+  </select>
+  
+  <select id="selectByPage" parameterType="com.ruiec.web.model.UserPointsDetail" resultMap="BaseResultMap">
+    SELECT upd.*,u.username
+    FROM
+    ruiec_user_points_detail upd
+    LEFT JOIN ruiec_user u ON upd.user_id = u.id
+    <where>
+		<if test="selectWho==1 and selectContent!=null">
+    		and u.username like "%"#{selectContent}"%"
+    	</if>
+		<if test="selectWho==2 and selectContent!=null">
+        	and upd.item like "%"#{selectContent}"%"
+      	</if>
+	</where>
+	order by id desc
+  </select>
+    
+  <delete id="deleteByPrimaryKeys">
+    DELETE FROM
+    <include refid="Table_Name" />
+     WHERE id IN
+  	 <foreach close=")" collection="array" index="index" item="item" open="(" separator=",">
+     	#{item}
+  	 </foreach> 
+  </delete>
+  
+	<!-- /ZhiyongGuo -->
+	
+	<!-- zgc -->
+  <select id="selectByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    from ruiec_user_points_detail
+    where user_id = #{userId,jdbcType=INTEGER}
+    ORDER BY id DESC
+  </select>
+  
+   <select id="selectByAllSignPoints" parameterType="java.lang.Integer" resultType="java.lang.Float">
+    select SUM(change_points)
+    from ruiec_user_points_detail
+    where user_id = #{userId,jdbcType=INTEGER}
+    and item like "%签到%"
+  </select>
+  
+	<!-- zgc -->
+	
+	<!-- bingo -->
+	<sql id="TableName">
+		ruiec_user_points_detail
+	</sql>
+	
+	<select id="selectByUserPointsDetail" resultMap="BaseResultMap">
+		SELECT
+		<include refid="Base_Column_List"/>
+		FROM
+		<include refid="TableName"/>
+		<where>
+			<if test="createTime != null">
+				TO_DAYS(create_time) = TO_DAYS(#{createTime,jdbcType=TIMESTAMP})
+			</if>
+			<if test="userId != null">
+				AND user_id = #{userId,jdbcType=INTEGER}
+			</if>
+			<if test="item != null">
+				AND item = #{item,jdbcType=VARCHAR}
+			</if>
+			<if test="changePoints != null">
+				AND change_points = #{changePoints,jdbcType=REAL}
+			</if>
+			<if test="currentPoints != null">
+				AND current_points = #{currentPoints,jdbcType=REAL}
+			</if>
+		</where>
+		ORDER BY id DESC
+	</select>
+	<!-- bingo -->
+
+</mapper>

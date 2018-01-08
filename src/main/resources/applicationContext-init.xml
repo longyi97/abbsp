@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<!-- 系统设置初始化 -->
+    <!-- <bean id="sysConfigInit" class="com.ruiec.web.init.SysConfigInit"></bean> -->
+	<!-- 后台菜单初始化 -->
+    <!-- <bean id="menuInit" class="com.ruiec.web.init.MenuInit"></bean> -->
+	<!-- 后台导航初始化 -->
+    <bean id="navigationInit" class="com.ruiec.web.init.NavigationInit"></bean>
+	<!-- 后台管理员初始化 -->
+    <!-- <bean id="adminInit" class="com.ruiec.web.init.AdminInit"></bean> -->
+	<!-- 对称加密秘钥初始化 -->
+    <!-- <bean id="desKeyInit" class="com.ruiec.web.init.DesKeyInit"></bean> -->
+    <!-- 省市区信息初始化 -->
+    <!-- <bean id="areaInit" class="com.ruiec.web.init.AreaInit"></bean> -->
+    <!-- 支付插件配置初始化 -->
+    <!-- <bean id="pluginConfigInit" class="com.ruiec.web.init.PluginConfigInit"></bean> -->
+    <!-- 底部数据类型初始化 -->
+    <!-- <bean id="footerDataTypeInit" class="com.ruiec.web.init.FooterDataTypeInit"></bean> -->
+    <!-- 用户组初始化 -->
+    <!-- <bean id="userGroupInit" class="com.ruiec.web.init.UserGroupInit"></bean> -->
+	<!-- 用户静态数据初始化 -->
+    <!-- <bean id="userInit" class="com.ruiec.web.init.UserInit"></bean> -->
+    <!-- 前台菜单初始化 -->
+    <bean id="homeMenuInit" class="com.ruiec.web.init.homeMenuInit"></bean>
+</beans>    

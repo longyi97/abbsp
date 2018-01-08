@@ -1,0 +1,23 @@
+/*澶撮儴*/
+.body{background-color: #f5f5f5 !important;font-family: "微软雅黑";}
+.header{width: 100%;background-color: #1f1c1c;height: 50px;line-height: 50px;position:fixed;z-index:10000;}
+.header .logo{overflow: hidden;margin-left: 25px;}
+.header .logo a img{height:40px;display:inline-block;float:left;margin-top:5px;}
+.header .logo a:hover{text-decoration: none}
+.header .header-nav1{overflow: hidden;}
+.header .header-nav1 label{position: relative;overflow: hidden;margin-bottom:0;}
+.header .header-nav1 label .headerinput{border: none;width: 230px;height: 28px;vertical-align: baseline;font-weight: normal;float: left;margin-top: 11px;border-radius: 2px;}
+.header .header-nav1 label{display: inline-block;margin-right: 70px;height: 40px;}
+.header .header-nav1 label a{position: absolute;right: 15px;top: 0}
+.header .header-nav1 label i{color: #666;vertical-align: middle;}
+.header .header-nav1 a sup{width: 20px;height: 20px;border-radius: 50%;background-color: #da251d;display: inline-block;line-height: 20px;text-align: center;color: #fff;}
+
+.header .header-nav2 span{display: inline-block;height: 50px;line-height:50px;position: relative}
+.header .header-nav2 span:hover .memberCor{display: block;}
+.header .header-nav2 span em{margin-right:10px;}
+.header .header-nav2 span em img{width: 30px;height: 30px;vertical-align: middle;border-radius:50%;}
+.header .header-nav2 span>a{color: #fff;margin-right:20px}
+.memberCor{position: absolute;padding: 8px 0;background-color: #1f1c1c;top: 50px;right: 0;width: 120px;display: none}
+.memberCor a:hover{background: #da251d;text-decoration: none;color:#fff;}
+.memberCor a{text-align: center;color: #fff;display: block;line-height: 40px;}
+.memberCor a.curr{background: #da251d;color: #fff;}

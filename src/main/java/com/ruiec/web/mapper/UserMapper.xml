@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruiec.web.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.ruiec.web.model.User">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="sex" jdbcType="BIT" property="sex" />
+    <result column="birthday" jdbcType="TIMESTAMP" property="birthday" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="sign" jdbcType="VARCHAR" property="sign" />
+    <result column="head_image" jdbcType="VARCHAR" property="headImage" />
+    <result column="is_locked" jdbcType="BIT" property="isLocked" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, create_time, modify_time, username, password, sex, birthday, mobile, email, 
+    sign, head_image,is_locked
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ruiec_user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKeys">
+    delete from ruiec_user where id in
+  	 <foreach item="item" index="index" collection="array" open="(" separator="," close=")">
+     	#{item}
+  	 </foreach> 
+  </delete>
+  
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from ruiec_user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ruiec.web.model.User">
+    insert into ruiec_user (id, create_time, modify_time, 
+      username, password, sex, 
+      birthday, mobile, email, 
+      sign, head_image, is_locked
+      )
+    values (#{id,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP}, 
+      #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{sex,jdbcType=BIT}, 
+      #{birthday,jdbcType=TIMESTAMP}, #{mobile,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{sign,jdbcType=VARCHAR}, #{headImage,jdbcType=VARCHAR},  #{isLocked,jdbcType=BIT})
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.ruiec.web.model.User">
+   <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
+          SELECT LAST_INSERT_ID()
+      </selectKey>
+    insert into ruiec_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="modifyTime != null">
+        modify_time,
+      </if>
+      <if test="username != null">
+        username,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="sign != null">
+        sign,
+      </if>
+      <if test="headImage != null">
+        head_image,
+      </if>
+      <if test="isLocked != null">
+        is_locked,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="username != null">
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=BIT},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="sign != null">
+        #{sign,jdbcType=VARCHAR},
+      </if>
+      <if test="headImage != null">
+        #{headImage,jdbcType=VARCHAR},
+      </if>
+      <if test="isLocked != null">
+        #{isLocked,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ruiec.web.model.User">
+    update ruiec_user
+    <set>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="username != null">
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=BIT},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="sign != null">
+        sign = #{sign,jdbcType=VARCHAR},
+      </if>
+      <if test="headImage != null">
+        head_image = #{headImage,jdbcType=VARCHAR},
+      </if>
+      <if test="isLocked != null">
+        is_locked = #{isLocked,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ruiec.web.model.User">
+    update ruiec_user
+    set create_time = #{createTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=BIT},
+      birthday = #{birthday,jdbcType=TIMESTAMP},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      sign = #{sign,jdbcType=VARCHAR},
+      head_image = #{headImage,jdbcType=VARCHAR},
+      is_locked = #{isLocked,jdbcType=BIT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+  <!-- bingo -->
+  <sql id="Table_Name">
+  	ruiec_user
+  </sql>
+    
+  <select id="countAll" resultType="java.lang.Integer">
+    SELECT COUNT(*)	FROM 
+	<include refid="Table_Name" />
+  </select>
+  <!-- bingo -->
+  
+  
+    <select id="selectDepartmentId"  resultType="java.lang.Integer" parameterType="java.lang.Integer" >
+    select d.id from ruiec_department d
+	WHERE d.id =(
+		select du.department_id
+    from
+		ruiec_department_user du WHERE du.user_id=#{id})
+  </select>
+  <!-- zgc -->
+    <select id="selectdepartment"  resultType="java.lang.String" parameterType="java.lang.Integer" >
+    select d.name from ruiec_department d
+	WHERE d.id =(
+		select du.department_id
+    from
+		ruiec_department_user du WHERE du.user_id=#{id})
+  	</select>
+  
+  <select id="selectAll" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from ruiec_user 
+    order by id desc,create_time desc
+  </select>
+  <update id="updateByPrimaryKeyPart" parameterType="com.ruiec.web.model.User">
+    update ruiec_user
+    <set>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="username != null">
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=BIT},
+      </if>
+      <if test="1==1">
+        birthday = #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="1==1">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="1==1">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="1==1">
+        sign = #{sign,jdbcType=VARCHAR},
+      </if>
+      <if test="headImage != null">
+        head_image = #{headImage,jdbcType=VARCHAR},
+      </if>
+      <if test="isLocked != null">
+        is_locked = #{isLocked,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPage" resultMap="BaseResultMap" parameterType="com.ruiec.web.model.User" >
+    select 
+    <include refid="Base_Column_List" />
+    from ruiec_user 
+    <where>
+    	<if test="username!=null">
+    		username like "%"#{username}"%"
+    	</if>
+    </where>
+    order by id desc,create_time desc
+  </select>
+  
+  <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ruiec_user where username = #{username}
+    order by id desc,create_time desc
+  </select>
+  
+  <select id="selectByDepartmentAllUser" parameterType="com.ruiec.web.dto.UserDTO" resultMap="BaseResultMap">
+     select  * from ruiec_user u
+	 left join ruiec_department_user du
+ 	 on u.id=du.user_id 
+	 <where>
+    	<if test="username!=null">
+    		and username like "%"#{username}"%"
+    	</if>
+	    <if test="departmentId!=null and departmentId!=''">
+	    	 and du.department_id = #{departmentId,jdbcType=INTEGER}
+	    </if>
+	    <if test="isLocked!=null">
+	    	 and u.is_locked = #{isLocked,jdbcType=BIT}
+	    </if>
+    </where>
+    order by id desc,create_time desc
+  </select>
+  <!-- zgc -->
+</mapper>

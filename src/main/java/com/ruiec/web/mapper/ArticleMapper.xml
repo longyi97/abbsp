@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruiec.web.dao.ArticleMapper">
+  <resultMap id="BaseResultMap" type="com.ruiec.web.model.Article">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="module_id" jdbcType="INTEGER" property="moduleId" />
+    <result column="article_category_id" jdbcType="INTEGER" property="articleCategoryId" />
+    <result column="is_top" jdbcType="BIT" property="isTop" />
+    <result column="is_good" jdbcType="BIT" property="isGood" />
+    <result column="is_recommend" jdbcType="BIT" property="isRecommend" />
+    <result column="is_hot" jdbcType="BIT" property="isHot" />
+     <result column="is_delete" jdbcType="BIT" property="isDelete" />
+    
+    <result column="hit" jdbcType="INTEGER" property="hit" />
+    <result column="points" jdbcType="REAL" property="points" />
+    <result column="points_max" jdbcType="REAL" property="pointsMax" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.ruiec.web.model.Article">
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, create_time, modify_time, title, user_id, module_id, article_category_id, is_top, 
+    is_good, is_recommend, is_hot, hit, points, points_max,is_delete
+  </sql>
+  <sql id="Blob_Column_List">
+    content
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from ruiec_article
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from ruiec_article
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  
+  <insert id="insert" parameterType="com.ruiec.web.model.Article">
+   insert into ruiec_article (id, create_time, modify_time, 
+      title, user_id, module_id, 
+      article_category_id, is_top, is_good, 
+      is_recommend, is_hot, hit, points, points_max, content
+      )
+    values (#{id,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP}, 
+      #{title,jdbcType=VARCHAR}, #{userId,jdbcType=INTEGER}, #{moduleId,jdbcType=INTEGER}, 
+      #{articleCategoryId,jdbcType=INTEGER}, #{isTop,jdbcType=BIT}, #{isGood,jdbcType=BIT}, 
+      #{isRecommend,jdbcType=BIT}, #{isHot,jdbcType=BIT}, #{hit,jdbcType=INTEGER}, #{points,jdbcType=REAL},
+      #{pointsMax,jdbcType=REAL}, #{content,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  
+  <insert id="insertSelective" parameterType="com.ruiec.web.model.Article">
+  <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id"> 
+      SELECT LAST_INSERT_ID() AS ID      
+  </selectKey>
+    insert into ruiec_article
+ <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="modifyTime != null">
+        modify_time,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="moduleId != null">
+        module_id,
+      </if>
+      <if test="articleCategoryId != null">
+        article_category_id,
+      </if>
+      <if test="isTop != null">
+        is_top,
+      </if>
+      <if test="isGood != null">
+        is_good,
+      </if>
+      <if test="isRecommend != null">
+        is_recommend,
+      </if>
+      <if test="isHot != null">
+        is_hot,
+      </if>
+      <if test="hit != null">
+        hit,
+      </if>
+      <if test="points != null">
+        points,
+      </if>
+      <if test="pointsMax != null">
+        points_max,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="moduleId != null">
+        #{moduleId,jdbcType=INTEGER},
+      </if>
+      <if test="articleCategoryId != null">
+        #{articleCategoryId,jdbcType=INTEGER},
+      </if>
+      <if test="isTop != null">
+        #{isTop,jdbcType=BIT},
+      </if>
+      <if test="isGood != null">
+        #{isGood,jdbcType=BIT},
+      </if>
+      <if test="isRecommend != null">
+        #{isRecommend,jdbcType=BIT},
+      </if>
+      <if test="isHot != null">
+        #{isHot,jdbcType=BIT},
+      </if>
+      <if test="hit != null">
+        #{hit,jdbcType=INTEGER},
+      </if>
+      <if test="points != null">
+        #{points,jdbcType=REAL},
+      </if>
+      <if test="pointsMax != null">
+        #{pointsMax,jdbcType=REAL},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+    
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ruiec.web.model.Article">
+    update ruiec_article
+       <set>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="moduleId != null">
+        module_id = #{moduleId,jdbcType=INTEGER},
+      </if>
+      <if test="articleCategoryId != null">
+        article_category_id = #{articleCategoryId,jdbcType=INTEGER},
+      </if>
+      <if test="isTop != null">
+        is_top = #{isTop,jdbcType=BIT},
+      </if>
+      <if test="isGood != null">
+        is_good = #{isGood,jdbcType=BIT},
+      </if>
+      <if test="isRecommend != null">
+        is_recommend = #{isRecommend,jdbcType=BIT},
+      </if>
+      <if test="isHot != null">
+        is_hot = #{isHot,jdbcType=BIT},
+      </if>
+      <if test="isDelete != null">
+        is_delete = #{isDelete,jdbcType=BIT},
+      </if>
+      <if test="hit != null">
+        hit = #{hit,jdbcType=INTEGER},
+      </if>
+      <if test="points != null">
+        points = #{points,jdbcType=REAL},
+      </if>
+      <if test="pointsMax != null">
+        points_max = #{pointsMax,jdbcType=REAL},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.ruiec.web.model.Article">
+  update ruiec_article
+    set create_time = #{createTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      title = #{title,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=INTEGER},
+      module_id = #{moduleId,jdbcType=INTEGER},
+      article_category_id = #{articleCategoryId,jdbcType=INTEGER},
+      is_top = #{isTop,jdbcType=BIT},
+      is_good = #{isGood,jdbcType=BIT},
+      is_recommend = #{isRecommend,jdbcType=BIT},
+      is_hot = #{isHot,jdbcType=BIT},
+      hit = #{hit,jdbcType=INTEGER},
+      points = #{points,jdbcType=REAL},
+      points_max = #{pointsMax,jdbcType=REAL},
+      content = #{content,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ruiec.web.model.Article">
+      update ruiec_article
+    set create_time = #{createTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      title = #{title,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=INTEGER},
+      module_id = #{moduleId,jdbcType=INTEGER},
+      article_category_id = #{articleCategoryId,jdbcType=INTEGER},
+      is_top = #{isTop,jdbcType=BIT},
+      is_good = #{isGood,jdbcType=BIT},
+      is_recommend = #{isRecommend,jdbcType=BIT},
+      is_hot = #{isHot,jdbcType=BIT},
+      hit = #{hit,jdbcType=INTEGER},
+      points = #{points,jdbcType=REAL},
+      points_max = #{pointsMax,jdbcType=REAL},
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+   <select id="selectAll" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+  		select * from ruiec_article order by create_time desc
+   </select>
+   
+   
+   <delete id="deleteByPrimaryKeys">
+    delete from ruiec_article where id in
+  	 <foreach item="item" index="index" collection="array" open="(" separator="," close=")">
+     	#{item}
+  	 </foreach> 
+  </delete>
+  
+  <select id="getType" parameterType="java.lang.String" resultType="java.util.HashMap">
+    SELECT *FROM 
+    (SELECT  COUNT(id) totalProduct FROM   `ruiec_article` )totalProduct;  
+   </select>
+   
+   <!-- bingo -->
+   <sql id="Table_Name">
+   	ruiec_article
+   </sql>
+   
+  <select id="selectByPage" parameterType="com.ruiec.web.model.Article" resultMap="BaseResultMap">
+    SELECT 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    FROM
+    <include refid="Table_Name" />
+    <where>
+    	<if test="moduleId != null and moduleId != 0">
+    		module_id = #{moduleId}
+    	</if>
+    </where>
+  </select>
+   
+  <select id="selectByModuleId" resultMap="BaseResultMap">
+    SELECT 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    FROM
+    <include refid="Table_Name" />
+	<where>
+    	<if test="moduleId != null and moduleId != 0">
+    		module_id = #{moduleId}
+    	</if>
+    </where>
+  </select>
+   
+  <select id="selectByTopModule" resultMap="BaseResultMap">
+    SELECT 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    FROM
+    <include refid="Table_Name" />
+	<where>
+ 		is_delete = false
+    	<if test="moduleId != null and moduleId != 0">
+    		AND module_id IN
+			<foreach collection="ids" index="index" item="id" open="(" separator="," close=")">
+				#{id}
+			</foreach>
+    	</if>
+    </where>
+  </select>
+  
+   <select id="selectNew" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+	SELECT
+	<include refid="Base_Column_List" />
+	FROM 
+	<include refid="Table_Name" />
+	WHERE is_delete = false
+   </select>
+   
+   <select id="countByDate" parameterType="java.sql.Timestamp" resultType="java.lang.Integer">
+	SELECT COUNT(*)	FROM 
+	<include refid="Table_Name" />
+	<where>
+		is_delete = false
+		<if test="queryDate != null">
+			AND TO_DAYS(create_time) = TO_DAYS(#{queryDate, jdbcType=TIMESTAMP})
+		</if>
+		<if test="moduleId != null and moduleId != 0">
+    		AND module_id IN
+			<foreach collection="ids" index="index" item="id" open="(" separator="," close=")">
+				#{id}
+			</foreach> 
+    	</if>
+	</where>
+   </select>
+   
+   <select id="countByModuleId" resultType="java.lang.Integer">
+	SELECT COUNT(*) FROM
+	<include refid="Table_Name" />
+	<where>
+		is_delete = false 
+		AND module_id IN
+		<foreach collection="ids" index="index" item="id" open="(" separator="," close=")">
+			#{id}
+		</foreach> 
+    </where>
+   </select>
+   
+   <select id="countByArticleDTO" parameterType="com.ruiec.web.dto.ArticleDTO" resultType="java.lang.Integer">
+	SELECT COUNT(*)	FROM 
+	<include refid="Table_Name" />
+	<where>
+		is_delete = false
+		<if test="queryDate != null">
+			AND TO_DAYS(create_time) = TO_DAYS(#{queryDate, jdbcType=TIMESTAMP})
+		</if>
+		<if test="userId != null">
+			AND user_id = #{userId, jdbcType=INTEGER}
+		</if>
+		<if test="moduleId != null and moduleId != 0">
+    		AND module_id = #{moduleId}
+    	</if>
+	</where>
+	FOR UPDATE
+   </select>
+   <!-- /bingo -->
+   
+   <!-- zgc -->
+    <select id="selectByUserAllArticle" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 'false' as QUERYID,
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from ruiec_article
+    where user_id = #{user_id,jdbcType=INTEGER}
+    order by id desc
+  	</select>
+  	<select id="selectByUserAllArticleCount" resultType="java.lang.Integer">
+    select count(user_id) from ruiec_article
+    where user_id = #{user_id,jdbcType=INTEGER}
+  	</select>
+  	<select id="selectByUserAllArticleHitCount" resultType="java.lang.Integer">
+    select count(user_id) from ruiec_article
+    where user_id = #{user_id,jdbcType=INTEGER} and is_good=true
+  	</select>
+  	
+    <select id="selectShufflingArticle"  resultMap="BaseResultMap">
+    SELECT 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    FROM
+    <include refid="Table_Name" />
+    <where>
+    	<if test="moduleId != null and moduleId != 0">
+    		and module_id IN (SELECT m.id from ruiec_module m WHERE m.parent_id = #{moduleId} OR m.id = #{moduleId})
+    	</if>
+    	<if test="1==1">
+    		and content like '%src=&quot;%&quot;%'
+    	</if>
+    </where>
+    order by hit desc,create_time desc
+    limit 3
+   </select>
+   
+   <select id="selectByArticleAllUser" parameterType="com.ruiec.web.dto.ArticleDTO" resultMap="BaseResultMap">
+     select  a.*,u.username,m.name from ruiec_article a
+	 left join ruiec_user u
+ 	 on u.id=a.user_id 
+ 	 left join ruiec_module m
+ 	 on m.id=a.module_id
+	 <where>
+    	<if test="title!=null">
+    		and title like "%"#{title}"%"
+    	</if>
+    	<if test="content!=null">
+    		and content like "%"#{content}"%"
+    	</if>
+    	<if test="username!=null">
+    		and username like "%"#{username}"%"
+    	</if>
+    	<if test="name!=null">
+    		and name like "%"#{name}"%"
+    	</if>
+    </where>
+    order by id desc,create_time desc
+  </select>
+  
+   <!-- zgc -->
+   
+   <!-- WW -->
+   <update id="updateAddHit" parameterType="com.ruiec.web.model.Article">
+    update ruiec_article set hit=hit+1  where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+  
+  <select id="selectArticleTitl" resultType="java.lang.String" parameterType="java.lang.Integer">
+      SELECT title FROM ruiec_article WHERE id = #{id,jdbcType=INTEGER}
+   </select>
+ 
+ 
+    <select id="selectByPageType" parameterType="com.ruiec.web.dto.ArticelSelectDTO" resultMap="ResultMapWithBLOBs">
+		SELECT * FROM ruiec_article a
+		<where>
+			a.is_delete=false
+	    	<if test="moduleId != null and moduleId != 0">
+	    		AND a.module_id = #{moduleId}
+	    	</if><!-- new title query -->
+	     	<if test="title != null ">
+		        AND title like "%"#{title}"%"
+		      </if>
+	    	<if test="articleCategoryId != null and articleCategoryId != 0">
+	    		AND a.article_category_id = #{articleCategoryId}
+	    	</if>
+	    	
+	    	<if test="isTop != null and isTop != 0">
+	    		AND a.is_top = #{isTop}
+	    	</if>
+	    	<if test="isGood != null and isGood != 0">
+	    		AND a.is_good = #{isGood}
+	    	</if>
+	    	<if test="isRecommend != null and isRecommend != 0">
+	    		AND a.is_recommend = #{isRecommend}
+	    	</if>
+	    	<if test="isHot != null and isHot != 0">
+	    		AND a.is_hot = #{isHot}
+	    	</if>
+    	</where>
+		 ORDER BY 
+		   <choose>
+		        <when test="replyType ==0 and  hitType==0">
+		           a.is_top DESC,
+		        </when>
+		   </choose>
+		 <if test="replyType==2">(SELECT COUNT(*) c FROM ruiec_article_reply ar WHERE ar.article_id = a.id) DESC,</if>
+		 <if test="replyType==1">(SELECT COUNT(*) c FROM ruiec_article_reply ar WHERE ar.article_id = a.id) ASC,</if>
+		 <if test = "hitType==3">a.hit DESC,</if>
+		 <if test="hitType==4">a.hit ASC,</if>a.id DESC
+   </select>
+  
+   <update id="updateByPrimary" parameterType="com.ruiec.web.model.Article">
+      update ruiec_article
+      set is_delete = true
+    where where id in
+     <foreach item="item" index="index" collection="array" open="(" separator="," close=")">
+     	#{item}
+  	 </foreach> 
+    
+  </update>
+  
+    <select id="selectKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select * from ruiec_article
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  
+</mapper>
