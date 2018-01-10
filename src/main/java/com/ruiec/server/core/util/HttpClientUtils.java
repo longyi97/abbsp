@@ -198,7 +198,6 @@ public class HttpClientUtils{
 	
 	/**
 	 * 发送post请求
-	 * @author 刘立雯
 	 * Date：2016年09月19日
 	 */
 	public static String doPostQueryCmd(String url, String xml){

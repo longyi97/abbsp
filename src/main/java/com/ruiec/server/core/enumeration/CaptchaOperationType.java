@@ -3,7 +3,6 @@ package com.ruiec.server.core.enumeration;
 
 /**
  * 验证码的操作类型(哪些操作需要获取验证码)
- * @author 熊华松<br>
  * Version: 1.0<br>
  * Date: 2016年04月27日
  */

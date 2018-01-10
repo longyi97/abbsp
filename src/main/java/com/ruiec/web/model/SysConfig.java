@@ -4,7 +4,6 @@ package com.ruiec.web.model;
 
 /**
  * 系统配置项实体类
- * @author 杨龙香<br>
  * Version: 1.0<br>
  * Date: 2017年01月07日
  */

@@ -16,7 +16,6 @@ import com.ruiec.web.service.ModuleService;
 
 /**
  * 前台菜单初始化
- * @author 钟国城<br>
  * @date 2017年12月27日 上午9:04:10
  */
 public class homeMenuInit implements ApplicationListener<ContextRefreshedEvent> {

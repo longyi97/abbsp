@@ -7,7 +7,6 @@ import com.ruiec.web.model.UserPoints;
 /**
  * 积分记录数据访问接口
  * 
- * @author Jerry<br>
  * @date 2017年11月28日 下午4:30:28
  */
 public interface UserPointsMapper extends BaseMapper<UserPoints> {
@@ -15,7 +14,6 @@ public interface UserPointsMapper extends BaseMapper<UserPoints> {
 	/**
 	 * 通过用户ID更新用户积分记录
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年11月29日 下午5:18:10
 	 */
 	Integer updateByUserId(@Param("userId") Integer userId);
@@ -23,7 +21,6 @@ public interface UserPointsMapper extends BaseMapper<UserPoints> {
 	/**
 	 * 根据用户ID查询用户积分
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年11月29日 下午5:49:32
 	 */
 	UserPoints selectByUserId(@Param("userId") Integer userId);
@@ -31,7 +28,6 @@ public interface UserPointsMapper extends BaseMapper<UserPoints> {
 	/**
 	 * 根据用户名查询是否存在
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年11月30日 上午11:16:41
 	 */
 	public UserPoints selectByUsername(String username);

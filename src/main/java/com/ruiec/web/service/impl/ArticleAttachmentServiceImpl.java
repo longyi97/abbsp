@@ -12,7 +12,6 @@ import com.ruiec.web.service.ArticleAttachmentService;
 
 /**
  * 附件服务实现类
- * @author Jerry<br>
  * @date 2017年10月30日 下午4:14:55
  */
 @Service("articleAttachmentServiceImpl")
@@ -30,7 +29,6 @@ public class ArticleAttachmentServiceImpl extends BaseServiceImpl<ArticleAttachm
 	/**
 	 * 查询全部帖子附件
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年12月8日 下午7:58:54
 	 */
 	public List<ArticleAttachment> selectByArticleAttachment(ArticleAttachment articleAttachment){

@@ -28,7 +28,6 @@ import com.ruiec.web.util.RuiecRemoveHTML;
 /**
  * 后台帖子控制器
  * 
- * @author Jerry
  * @date 2017年11月15日 下午8:26:20
  */
 @Controller
@@ -47,7 +46,6 @@ public class ArticleContrller extends BaseAdminController {
 	/**
 	 * 分页查询帖子信息
 	 * 
-	 * @author Jerry
 	 * @date 2017年11月15日 下午8:26:20
 	 */
 	@RequestMapping(value = "/list")
@@ -103,7 +101,6 @@ public class ArticleContrller extends BaseAdminController {
 	/***
 	 * 通过id删除帖子
 	 * 
-	 * @author Jerry
 	 * @date 2017年11月15日 下午8:26:20
 	 */
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)
@@ -121,7 +118,6 @@ public class ArticleContrller extends BaseAdminController {
 	/**
 	 * 初始化增加帖子页面
 	 * 
-	 * @author Jerry
 	 * @date 2017年11月15日 下午8:26:20
 	 */
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
@@ -132,7 +128,6 @@ public class ArticleContrller extends BaseAdminController {
 	/***
 	 * 发帖
 	 * 
-	 * @author 王伟
 	 * @date:2017年10月25日20:01:38
 	 */
 	@RequestMapping(value = "save", method = RequestMethod.POST)
@@ -156,7 +151,6 @@ public class ArticleContrller extends BaseAdminController {
 	/**
 	 * 通过子类板块查询所有的帖子信息
 	 * 
-	 * @author 王伟 date:2017年10月26日19:54:44
 	 */
 	@RequestMapping(value = "moduleArticle", method = RequestMethod.GET)
 	public String moduleArticle(Model model, Article article, Integer id) {
@@ -168,7 +162,6 @@ public class ArticleContrller extends BaseAdminController {
 	/**
 	 * 更新帖子初始页
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年11月15日 下午8:26:20
 	 */
 	@RequestMapping(value = "/edit")
@@ -184,7 +177,6 @@ public class ArticleContrller extends BaseAdminController {
 	/**
 	 * 更新帖子信息(重构使用ajax提交)
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年11月15日 下午8:26:20
 	 */
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
@@ -223,7 +215,6 @@ public class ArticleContrller extends BaseAdminController {
 	/**
 	 * 帖子假删除（水贴）
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月8日 下午4:49:04
 	 */
 	@RequestMapping("/fakeDelete")

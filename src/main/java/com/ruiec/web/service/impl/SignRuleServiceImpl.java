@@ -11,7 +11,6 @@ import com.ruiec.web.service.SignRuleService;
 /**
  * 连续签到规则接口实现
  * 
- * @author 钟国城<br>
  * @date 2017年11月29日 下午2:11:33
  */
 @Service("signRuleServiceImpl")
@@ -27,7 +26,6 @@ public class SignRuleServiceImpl extends BaseServiceImpl<SignRule> implements Si
 	/**
 	 * 根据连续天数查询
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年11月30日 上午9:20:38
 	 */
 	public SignRule selectByContinuousDays(Integer continuousDays) {

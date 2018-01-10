@@ -19,7 +19,6 @@ import com.ruiec.web.service.NavigationService;
 
 /**
  * 后台导航初始化
- * @author 刘立雯<br>
  * Version 1.0<br>
  * Date: 2017年07月06日
  */

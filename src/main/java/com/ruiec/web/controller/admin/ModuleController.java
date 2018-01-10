@@ -23,7 +23,6 @@ import com.ruiec.web.service.ModuleService;
 /**
  * 版块控制器
  * 
- * @author bingo<br>
  * @date 2017年10月20日 上午10:28:44
  */
 @Controller
@@ -43,7 +42,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 显示添加版块页面
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月20日 上午10:32:31
 	 */
 	@RequestMapping("/add")
@@ -54,7 +52,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 添加版块
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月20日 上午10:34:50
 	 */
 	@RequestMapping("/save")
@@ -66,7 +63,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 显示编辑版块页面
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月20日 上午10:39:58
 	 */
 	@RequestMapping("/edit")
@@ -83,7 +79,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 编辑版块
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月9日 下午3:09:57
 	 */
 	@RequestMapping("/update")
@@ -99,7 +94,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 删除版块
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月20日 上午10:43:48
 	 */
 	@RequestMapping("/delete")
@@ -117,7 +111,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 同级版块列表
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月20日 上午10:49:05
 	 */
 	@RequestMapping("/list")
@@ -134,7 +127,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * AJAX获取同级部门
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 上午11:10:25
 	 */
 	@ResponseBody
@@ -146,7 +138,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 获取所有部门（按层级）
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:28:59
 	 */
 	@ResponseBody
@@ -165,7 +156,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 按层级组装部门
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:30:00
 	 */
 	public void getSubsDepartments(List<Department> all, Department department) {
@@ -184,7 +174,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 判断是否有下级
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:55:28
 	 */
 	public boolean hasSubDepartments(List<Department> all, Integer parentId) {
@@ -199,7 +188,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * AJAX获取同级版块
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 上午11:10:25
 	 */
 	@ResponseBody
@@ -213,7 +201,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 获取所有版块（按层级）
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:28:59
 	 */
 	@ResponseBody
@@ -232,7 +219,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 按层级组装
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:30:00
 	 */
 	public void getSubsModules(List<Module> all, Module module) {
@@ -251,7 +237,6 @@ public class ModuleController extends BaseAdminController {
 	/**
 	 * 判断是否有下级
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:55:28
 	 */
 	public boolean hasSubModules(List<Module> all, Integer parentId) {

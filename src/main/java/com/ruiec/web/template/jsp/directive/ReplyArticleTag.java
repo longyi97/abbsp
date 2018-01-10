@@ -11,7 +11,6 @@ import com.ruiec.web.util.SpringUtils;
 /**
  * 回复标签
  * 
- * @author bingo<br>
  * @date 2017年10月26日 下午1:39:18
  */
 public class ReplyArticleTag  extends SimpleTagSupport{
@@ -48,7 +47,6 @@ public class ReplyArticleTag  extends SimpleTagSupport{
 	/**
 	 * 根据父级ID，返回版块模型
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月26日 下午1:41:45
 	 */
 	

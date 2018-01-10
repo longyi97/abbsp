@@ -11,7 +11,6 @@ import com.ruiec.framework.server.support.hibernate.TableNameInfo;
 /**
  * 切换表名工具类(根据年份切换表名)
  * 
- * @author 杨龙香<br>
  * Version 1.0<br>
  * Date: 2016年06月22日
  */
@@ -20,7 +19,6 @@ public class SwitchTableNameUtil {
 	/**
 	 * 将表名切换成指定年份
 	 * 
-	 * @author 杨龙香<br>
 	 * Version 1.0<br>
 	 * Date: 2016年06月22日
 	 */
@@ -32,7 +30,6 @@ public class SwitchTableNameUtil {
 	/**
 	 * 将表名切换成当前年份
 	 * 
-	 * @author 杨龙香<br>
 	 * Version 1.0<br>
 	 * Date: 2016年06月22日
 	 */
@@ -48,7 +45,6 @@ public class SwitchTableNameUtil {
 	/**
 	 * 将表名切换成指后缀
 	 * 
-	 * @author 杨龙香<br>
 	 * Version 1.0<br>
 	 * Date: 2016年06月22日
 	 */

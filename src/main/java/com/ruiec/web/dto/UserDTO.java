@@ -7,7 +7,6 @@ import com.ruiec.web.model.BaseModel;
 /**
  * 前台用户DTO
  * 
- * @author 钟国城<br>
  * @date 2017年11月8日 上午9:35:00
  */
 public class UserDTO extends BaseModel {

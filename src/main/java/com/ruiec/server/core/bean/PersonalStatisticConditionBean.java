@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * 个人统计条件bean
- * @author 刘立雯
  * Date：2017年07月12日
  */
 public class PersonalStatisticConditionBean implements Serializable {

@@ -6,7 +6,6 @@ package com.ruiec.server.core.enumeration;
  * 注意要点：定义枚举值的时候，名字必须是实体的名字且首个字母是小写。如实体的名字是User，枚举的名字只能是use或者实体的名字是QQCustomer，枚举的名字只能是qQCustomer。
  * 因为记录后台操作日志是使用AOP处理的，在设定日志对象类型枚举值的时候，是按照实体的名字且首个字母转成小写给定枚举值的。
  * 
- * @author 熊华松<br>
  * Version 1.0<br>
  * Date: 2016年05月18日
  */

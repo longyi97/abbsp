@@ -26,7 +26,6 @@ import com.ruiec.web.util.RuiecRemoveHTML;
 
 /**
  * 后台帖子控制器
- * @author 王伟
  * date:2017年11月15日09:49:37
  */
 @Controller
@@ -42,7 +41,6 @@ public class AdminArticleReplayController extends BaseAdminController{
 	/**
 	 * 后台帖子回复列表
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月17日 下午2:14:30
 	 */
 	@RequestMapping(value="/list")
@@ -87,7 +85,6 @@ public class AdminArticleReplayController extends BaseAdminController{
 	}
 	/**
 	 * 删除回复评论
-	 * @author 王伟<br>
 	 * @date 2017年11月15日 下午2:31:01
 	 */
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)
@@ -104,7 +101,6 @@ public class AdminArticleReplayController extends BaseAdminController{
 	
 	/**
 	 * 编辑评论回复初始页面
-	 * @author 王伟
 	 * @date:2017年11月15日10:54:58
 	 */
 	@RequestMapping(value = "/edit")
@@ -124,7 +120,6 @@ public class AdminArticleReplayController extends BaseAdminController{
 	
 	/**
 	 * 编辑评论回复
-	 * @author 王伟
 	 * date:2017年11月15日10:56:18
 	 */
 
@@ -145,7 +140,6 @@ public class AdminArticleReplayController extends BaseAdminController{
 	
 	/**
 	 * 查询子类
-	 * @author 王伟
 	 * date：2017年11月15日10:02:36
 	 */
 	@RequestMapping(value="/list2")

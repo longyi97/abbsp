@@ -3,7 +3,6 @@ package com.ruiec.web.model;
 import java.util.Date;
 /***
  * 帖子实体
- * @author 王伟
  * date:2017年10月24日
  */
 public class Article extends BaseModel{

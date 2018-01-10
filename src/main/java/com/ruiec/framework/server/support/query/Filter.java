@@ -5,7 +5,6 @@ import java.io.Serializable;
 
 /**
  * 过滤封装类
- * @author 肖学良<br>
  * Version: 1.0<br>
  * Date: 2015年12月11日
  */
@@ -49,7 +48,6 @@ public class Filter implements Serializable {
 
 	/**
 	 * 获取过滤组装类
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public static FilterBuilder build(){
@@ -156,7 +154,6 @@ public class Filter implements Serializable {
 	
 	/**
 	 * 别名
-	 * @author 肖学良<br>
 	 * Date: 2015年12月25日
 	 */
 	public String getPropertyAlias() {
@@ -165,7 +162,6 @@ public class Filter implements Serializable {
 
 	/**
 	 * 别名
-	 * @author 肖学良<br>
 	 * Date: 2015年12月25日
 	 */
 	public void setPropertyAlias(String propertyAlias) {

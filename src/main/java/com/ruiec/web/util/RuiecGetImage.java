@@ -8,7 +8,6 @@ import java.util.regex.Pattern;
 /**
  * 获取图片路径
  * 
- * @author 钟国城<br>
  * @date 2017年12月11日 下午10:03:51
  */
 public class RuiecGetImage {
@@ -20,7 +19,6 @@ public class RuiecGetImage {
 	 * 
 	 * @param htmlCode
 	 *            HTML源码
-	 * @author zhongguocheng<br>
 	 * @date 2017年12月11日 下午10:03:02
 	 */
 	public static String getImageSrc(String htmlCode) {

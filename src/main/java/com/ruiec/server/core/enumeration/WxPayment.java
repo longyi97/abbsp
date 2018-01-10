@@ -2,7 +2,6 @@ package com.ruiec.server.core.enumeration;
 
 /**
  * 微信支付方式
- * @author 刘立雯
  * 2016年10月31日
  */
 public enum WxPayment {

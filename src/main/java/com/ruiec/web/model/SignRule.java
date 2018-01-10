@@ -3,7 +3,6 @@ package com.ruiec.web.model;
 /**
  * 用户连续签到规则模型
  * 
- * @author 钟国城<br>
  * @date 2017年11月29日 下午2:00:55
  */
 public class SignRule extends BaseModel {

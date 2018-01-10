@@ -12,7 +12,6 @@ import org.hibernate.validator.constraints.Range;
 /**
  * 部门模型
  * 
- * @author bingo<br>
  * @date 2017年10月20日 上午9:52:51
  */
 public class Department extends BaseModel {

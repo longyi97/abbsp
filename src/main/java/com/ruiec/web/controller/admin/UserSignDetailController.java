@@ -18,7 +18,6 @@ import com.ruiec.web.service.UserSignDetailService;
 /**
  * 后台签到明细管理控制器
  * 
- * @author zhongguocheng<br>
  * @date 2017年11月28日 下午5:43:50
  */
 @Controller
@@ -31,7 +30,6 @@ public class UserSignDetailController extends BaseAdminController {
 	/**
 	 * 签到明细列表
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月28日 下午5:44:01
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })

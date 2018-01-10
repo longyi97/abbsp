@@ -19,7 +19,6 @@ import com.ruiec.web.service.ModuleService;
 /**
  * 主题控制器
  * 
- * @author Jerry<br>
  * @date 2017年10月25日 下午8:26:20
  */
 @Controller
@@ -36,7 +35,6 @@ public class ArticleCategoryController extends BaseAdminController {
 	/**
 	 * 主题列表
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月25日 下午8:26:20
 	 */
 	@RequestMapping(value = "/list")
@@ -54,7 +52,6 @@ public class ArticleCategoryController extends BaseAdminController {
 	/**
 	 * 添加主题初始页
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月25日 下午8:26:20
 	 */
 	@RequestMapping(value = "/add")
@@ -65,7 +62,6 @@ public class ArticleCategoryController extends BaseAdminController {
 	/**
 	 * 添加主题信息
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月25日 下午8:26:20
 	 */
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
@@ -77,7 +73,6 @@ public class ArticleCategoryController extends BaseAdminController {
 	/**
 	 * 更新主题初始页
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月25日 下午8:26:20
 	 */
 	@RequestMapping(value = "/edit")
@@ -93,7 +88,6 @@ public class ArticleCategoryController extends BaseAdminController {
 	/**
 	 * 更新主题信息
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月25日 下午8:26:20
 	 */
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
@@ -109,7 +103,6 @@ public class ArticleCategoryController extends BaseAdminController {
 	/**
 	 * 删除主题信息
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月25日 下午8:26:20
 	 */
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)

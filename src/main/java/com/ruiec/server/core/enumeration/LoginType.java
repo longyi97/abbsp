@@ -4,7 +4,6 @@ package com.ruiec.server.core.enumeration;
 /**
  * 登录类型枚举:前台登录、后台登录
  * 
- * @author 熊华松<br>
  * Version 1.0<br>
  * Date: 2016年05月18日
  */

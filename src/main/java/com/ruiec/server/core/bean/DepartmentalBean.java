@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * 部门Bean
- * @author 刘立雯
  * Date：2017年08月15日
  */
 public class DepartmentalBean implements Serializable {

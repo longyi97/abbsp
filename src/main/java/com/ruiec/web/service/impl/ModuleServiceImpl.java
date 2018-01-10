@@ -17,7 +17,6 @@ import com.ruiec.web.service.ModuleService;
 /**
  * 版块服务实现
  * 
- * @author bingo<br>
  * @date 2017年10月24日 下午4:43:49
  */
 @Service
@@ -35,7 +34,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 获取直接子级
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月25日 下午8:05:50
 	 */
 	@Override
@@ -49,7 +47,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 保存版块及版块所属部门
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月3日 下午5:12:27
 	 */
 	@Override
@@ -76,7 +73,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 更新版块及版块所属部门
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月3日 下午5:16:25
 	 */
 	@Override
@@ -105,7 +101,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 删除版块
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月6日 下午3:14:08
 	 */
 	@Override
@@ -118,7 +113,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 根据当前登录用户->部门->版块
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月16日 下午4:37:50
 	 */
 	@Override
@@ -129,7 +123,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 根据当前登录用户->部门->版块（包含完整父级）
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月16日 下午4:37:50
 	 */
 	@Override
@@ -140,7 +133,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 迭代获取所有父级
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月16日 下午10:24:17
 	 */
 	@Override
@@ -158,7 +150,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	 * 获取按层级排序后的所有版块（从module开始所有子级）
 	 * 
 	 * @param dataList:数据列表（所有版块） module 顶级版块
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:30:00
 	 */
 	@Override
@@ -180,7 +171,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	 * 按层级组装
 	 * 
 	 * @param dataList:数据列表（所有版块） module 顶级版块
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:30:00
 	 */
 	@Override
@@ -203,7 +193,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 判断是否有下级
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:55:28
 	 */
 	@Override
@@ -220,7 +209,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 通过指定的版块ID获取所有直接下级版块ID
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月31日 下午4:13:50
 	 */
 	@Override
@@ -234,7 +222,6 @@ public class ModuleServiceImpl extends BaseServiceImpl<Module> implements Module
 	/**
 	 * 递归获取子级ID
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月31日 下午4:35:35
 	 */
 	public void getSubModuleIds(List<Integer> contentList, Integer parentId) {

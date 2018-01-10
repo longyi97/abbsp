@@ -5,7 +5,6 @@ import com.ruiec.web.model.SysConfig;
 
 /**
  * 系统配置接口实现类
- * @author 杨龙香<br>
  * Version 1.0<br>
  * Date: 2017年01月05日
  */

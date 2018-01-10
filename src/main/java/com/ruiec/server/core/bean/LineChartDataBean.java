@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * 折线图数据
- * @author 刘立雯
  * Date：2017年07月14日
  */
 public class LineChartDataBean implements Serializable {

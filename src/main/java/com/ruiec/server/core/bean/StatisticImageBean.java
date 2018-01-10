@@ -5,7 +5,6 @@ import java.io.Serializable;
 /**
  * 统计图数据bean
  * 
- * @author 刘立雯 Date：2017年07月11日
  */
 public class StatisticImageBean implements Serializable {
 

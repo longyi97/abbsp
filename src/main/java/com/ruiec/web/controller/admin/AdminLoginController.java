@@ -20,7 +20,6 @@ import com.ruiec.web.service.AdminService;
 /**
  * 后台登录控制器
  * 
- * @author 钟国城<br>
  * @date 2017年11月8日 上午9:29:37
  */
 @Controller
@@ -33,7 +32,6 @@ public class AdminLoginController extends BaseAdminController {
 	/**
 	 * 登录页面
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月8日 上午9:29:53
 	 */
 	@RequestMapping("/view")
@@ -44,7 +42,6 @@ public class AdminLoginController extends BaseAdminController {
 	/**
 	 * 后台登录
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月8日 上午9:30:06
 	 */
 	@RequestMapping(value = "/action", method = RequestMethod.POST)
@@ -73,7 +70,6 @@ public class AdminLoginController extends BaseAdminController {
 	/**
 	 * 退出登录
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月8日 上午9:30:26
 	 */
 	@RequestMapping("/out")

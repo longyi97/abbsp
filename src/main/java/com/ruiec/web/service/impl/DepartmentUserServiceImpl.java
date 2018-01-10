@@ -9,7 +9,6 @@ import com.ruiec.web.service.DepartmentUserService;
 
 /**
  * 用户服务实现类
- * @author Jerry<br>
  * @date 2017年10月24日 下午2:13:46
  */
 @Service("departmentUserServiceImpl")
@@ -25,7 +24,6 @@ public class DepartmentUserServiceImpl extends BaseServiceImpl<DepartmentUser> i
 	/**
 	 * 按用户ID查询部门ID
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年10月24日 下午3:32:39
 	 */
 	@Override

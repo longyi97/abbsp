@@ -9,7 +9,6 @@ import org.apache.log4j.Logger;
 
 /**
  * ehcache缓存工具类
- * @author Jerry<br>
  * @date 2017年12月18日 下午8:15:53
  */
 public class EhcacheUtils {
@@ -18,7 +17,6 @@ public class EhcacheUtils {
 	
 	/**
 	 * 设置数据
-	 * @author Jerry<br>
 	 * @date 2017年12月18日 下午8:16:15
 	 */
 	public static void put(String cacheName, Object key , Object value){
@@ -28,7 +26,6 @@ public class EhcacheUtils {
 	
 	/**
 	 * 获取数据
-	 * @author Jerry<br>
 	 * @date 2017年12月18日 下午8:16:28
 	 */
 	@SuppressWarnings("unchecked")
@@ -47,7 +44,6 @@ public class EhcacheUtils {
 	
 	/**
 	 * 删除数据
-	 * @author Jerry<br>
 	 * @date 2017年12月18日 下午8:16:46
 	 */
 	public static void remove(String cacheName, Object key){
@@ -61,7 +57,6 @@ public class EhcacheUtils {
 	
 	/**
 	 * 清空所有
-	 * @author Jerry<br>
 	 * @date 2017年12月18日 下午8:16:57
 	 */
 	public static void clear(String cacheName){
@@ -71,7 +66,6 @@ public class EhcacheUtils {
 	
 	/**
 	 * 获取ehcache缓存
-	 * @author Jerry<br>
 	 * @date 2017年12月18日 下午8:17:26
 	 */
 	public static Ehcache getEhcache(String cacheName){

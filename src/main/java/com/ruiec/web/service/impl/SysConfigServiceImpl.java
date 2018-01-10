@@ -11,7 +11,6 @@ import com.ruiec.web.service.SysConfigService;
 
 /**
  * 系统服务实现类
- * @author 杨龙香<br>
  * Version 1.0<br>
  * Date: 2017年01月05日
  */

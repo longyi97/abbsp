@@ -8,7 +8,6 @@ import com.ruiec.web.model.ArticleAttachment;
 /***
  * 帖子实体
  * 
- * @author 王伟 date:2017年10月24日
  */
 public class ArticleDTO {
 	/**

@@ -14,7 +14,6 @@ import com.ruiec.web.model.Admin;
 /**
  * 后台登录拦截器, 此拦截器将可以避免未经登录之间访问登录后才能跳转的页面
  * 
- * @author 钟国城<br>
  *         Version: 1.0<br>
  *         Date: 2017年11月00日
  */

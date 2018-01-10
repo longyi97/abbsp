@@ -5,7 +5,6 @@ import java.io.Serializable;
 /**
  * 首页项目列表Bean
  * 
- * @author 刘立雯 Date：2017年07月15日
  */
 public class IndexProjectBean implements Serializable {
 

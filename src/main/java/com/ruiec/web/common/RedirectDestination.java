@@ -1,8 +1,3 @@
-/**
- * 版权所有：深圳源中瑞科技有限公司<br>
- * 网 址：www.ruiec.com<br>
- * 电 话：0755-33581131<br>
- */
 package com.ruiec.web.common;
 
 import org.springframework.web.context.request.RequestAttributes;
@@ -10,7 +5,6 @@ import org.springframework.web.context.request.RequestContextHolder;
 
 /**
  * 跳转的目标页面
- * @author 熊华松<br>
  * Version 1.0<br>
  * Date: 2015-5-6
  */
@@ -38,7 +32,6 @@ public class RedirectDestination {
 	
 	/**
 	 * 添加跳转信息到session中
-	 * @author 肖学良<br>
 	 * Date: 2016年1月11日
 	 */
 	public void addToSession(){
@@ -93,7 +86,6 @@ public class RedirectDestination {
 
 	/**
 	 * 是否自动跳转
-	 * @author 肖学良<br>
 	 * Date: 2015年9月30日
 	 */
 	public boolean getAutoRedirect() {
@@ -102,7 +94,6 @@ public class RedirectDestination {
 
 	/**
 	 * 是否自动跳转
-	 * @author 肖学良<br>
 	 * Date: 2015年9月30日
 	 */
 	public RedirectDestination setAutoRedirect(boolean autoRedirect) {

@@ -22,7 +22,6 @@ import com.ruiec.web.util.SpringUtils;
 /**
  * 版块权限拦截器
  * 
- * @author bingo<br>
  * @date 2017年11月10日 下午9:58:17
  */
 public class AuthorityInterceptor implements HandlerInterceptor {

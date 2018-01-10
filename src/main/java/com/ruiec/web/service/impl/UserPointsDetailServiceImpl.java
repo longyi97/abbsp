@@ -16,7 +16,6 @@ import com.ruiec.web.service.UserPointsDetailService;
 /**
  * 积分记录详情实现类
  * 
- * @author Jerry<br>
  * @date 2017年11月28日 下午5:44:03
  */
 @Service("userPointsDetailServiceImpl")
@@ -34,7 +33,6 @@ public class UserPointsDetailServiceImpl extends BaseServiceImpl<UserPointsDetai
 	/**
 	 * 插入用户积分明细记录，同时更新用户积分表中的积分
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年11月29日 下午5:26:28
 	 */
 	@Override
@@ -50,7 +48,6 @@ public class UserPointsDetailServiceImpl extends BaseServiceImpl<UserPointsDetai
 	/**
 	 * 通过用户ID查询该用户的所有积分明细
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年12月2日 下午2:39:18
 	 */
 	public List<UserPointsDetail> selectByUserId(Integer userId) {
@@ -60,7 +57,6 @@ public class UserPointsDetailServiceImpl extends BaseServiceImpl<UserPointsDetai
 	/**
 	 * 通过用户ID查询该用户通过签到所获得的积分之和
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年12月2日 下午4:23:05
 	 */
 	public Float selectByAllSignPoints(Integer userId) {
@@ -70,7 +66,6 @@ public class UserPointsDetailServiceImpl extends BaseServiceImpl<UserPointsDetai
 	/**
 	 * 计算用户今日获得积分数
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月4日 下午8:50:35
 	 */
 	@Override

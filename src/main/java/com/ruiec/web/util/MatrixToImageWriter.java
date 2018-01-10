@@ -9,7 +9,6 @@ import com.google.zxing.common.BitMatrix;
  
  /**
   * 二维码工具类
-  * @author 刘立雯
   * Date：2016年08月11日
   */
  public final class MatrixToImageWriter {

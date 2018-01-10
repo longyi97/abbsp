@@ -26,7 +26,6 @@ import com.ruiec.web.service.UserService;
 /***
  * 进入帖子拦截器，如果是用户所在的板块有这个帖子就进入否则就没有权限。
  * 
- * @author 王伟
  * @date:2017年11月10日15:39:46
  */
 public class ArticleInterceptor implements HandlerInterceptor {

@@ -8,7 +8,6 @@ import org.apache.commons.codec.binary.Base64;
 
 /**
  * 主键生成工具类
- * @author 杨龙香<br>
  * Version 1.0<br>
  * Date: 2017年01月05日
  */
@@ -16,7 +15,6 @@ public class PrimaryKeyGenerateUtils {
 	
 	/**
 	 * 生成主键
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月06日
 	 */
 	public static Serializable generatePrimaryKey(){

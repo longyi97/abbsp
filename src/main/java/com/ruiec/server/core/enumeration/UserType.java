@@ -3,7 +3,6 @@ package com.ruiec.server.core.enumeration;
 
 /**
  * 用户类型枚举
- * @author 熊华松<br>
  * Version 1.0<br>
  * Date: 2016年11月21日
  */

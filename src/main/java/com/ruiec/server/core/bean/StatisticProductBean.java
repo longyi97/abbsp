@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * 产品统计bean
- * @author 刘立雯
  * Date：2017年08月03日
  */
 public class StatisticProductBean implements Serializable {

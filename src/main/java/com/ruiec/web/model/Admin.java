@@ -7,7 +7,6 @@ import org.hibernate.validator.constraints.NotBlank;
 /**
  * 后台管理员模型
  * 
- * @author 钟国城<br>
  * @date 2017年11月8日 上午9:34:29
  */
 public class Admin extends BaseModel {

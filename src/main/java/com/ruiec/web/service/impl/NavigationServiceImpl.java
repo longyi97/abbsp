@@ -12,7 +12,6 @@ import com.ruiec.web.service.NavigationService;
 
 /**
  * 导航服务实现类
- * @author 刘立雯
  * Date：2017年07月06日
  */
 @Service("navigationServiceImpl")
@@ -27,7 +26,6 @@ public class NavigationServiceImpl extends BaseServiceImpl<Navigation> implement
 	
 	/**
 	 * 根据层级查询导航数据
-	 * @author 刘立雯
 	 * Date：2017年07月06日
 	 */
 	public List<Navigation> selectByLevel(int level){

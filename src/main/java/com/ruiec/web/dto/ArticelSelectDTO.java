@@ -1,7 +1,6 @@
 package com.ruiec.web.dto;
 /**
  * 封装(列表页面参数-接收参数)
- * @author 王伟
  * date：2017年12月2日15:07:48
  */
 public class ArticelSelectDTO {

@@ -22,7 +22,6 @@ import com.ruiec.web.service.SignRuleService;
 /**
  * 后台用户连续签到管理控制器
  * 
- * @author 钟国城<br>
  * @date 2017年11月29日 下午2:14:40
  */
 @Controller
@@ -35,7 +34,6 @@ public class SignRuleController extends BaseAdminController {
 	/***
 	 * 签到规则列表
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月29日 下午4:58:56
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -52,7 +50,6 @@ public class SignRuleController extends BaseAdminController {
 	/**
 	 * 跳转修改签到规则页面
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月29日 下午5:18:23
 	 */
 	@RequestMapping("/edit")
@@ -67,7 +64,6 @@ public class SignRuleController extends BaseAdminController {
 	/**
 	 * 修改签到规则
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月29日 下午5:01:26
 	 */
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
@@ -83,7 +79,6 @@ public class SignRuleController extends BaseAdminController {
 	/**
 	 * 删除
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月30日 上午9:06:55
 	 */
 	@RequestMapping("/delete")
@@ -100,7 +95,6 @@ public class SignRuleController extends BaseAdminController {
 	/**
 	 * 验证是否存在相同连续天数
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月30日 上午9:25:07
 	 */
 	@ResponseBody

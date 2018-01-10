@@ -48,7 +48,6 @@ import com.ruiec.web.util.RuiecRemoveHTML;
 /**
  * 用户操作页面控制器
  * 
- * @author 钟国城<br>
  * @date 2017年10月17日 下午2:11:01
  */
 @Controller
@@ -79,7 +78,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 跳转个人中心首页
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月17日 下午2:11:01
 	 */
 	@RequestMapping("index")
@@ -139,7 +137,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 用户基本信息
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年12月6日 下午4:24:43
 	 */
 	public void userInformation(Model model, Integer sessionId, User user, HttpSession session) {
@@ -165,7 +162,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 跳转设置个人资料页面
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月17日 下午2:11:01
 	 */
 	@RequestMapping("userData")
@@ -179,7 +175,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 修改用户资料
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月17日 下午2:11:01
 	 */
 	@ResponseBody
@@ -205,7 +200,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 跳转修改密码
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月17日 下午2:11:01
 	 */
 	/*
@@ -219,7 +213,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 修改密码
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月17日 下午2:11:01
 	 */
 	@ResponseBody
@@ -279,7 +272,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 跳转积分列表页面
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月17日 下午2:11:01
 	 */
 	@RequestMapping("signList")
@@ -312,7 +304,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 跳转签到页面
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月30日 上午10:42:41
 	 */
 	@RequestMapping("sign")
@@ -378,7 +369,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 完成签到
 	 * 
-	 * @author zhongguocheng<br>
 	 * @throws ParseException
 	 * @date 2017年11月30日 上午11:18:58
 	 */
@@ -405,7 +395,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 获取用户的所有签到日期
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年12月5日 上午11:25:32
 	 */
 	@RequestMapping("userSignDate")
@@ -488,7 +477,6 @@ public class UserController extends BaseAdminController {
 	/**
 	 * 签到后按周签到展示
 	 * 
-	 * @author 王伟<br>
 	 * @date 2017年12月19日 下午10:42:41
 	 */
 	@RequestMapping("/weekDignIn")

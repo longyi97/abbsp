@@ -25,7 +25,6 @@ import com.ruiec.web.util.RuiecDateUtils;
 /**
  * 用户签到实现
  * 
- * @author 钟国城<br>
  * @date 2017年11月28日 下午4:01:44
  */
 @Service("userSignServiceImpl")
@@ -49,7 +48,6 @@ public class UserSignServiceImpl extends BaseServiceImpl<UserSign> implements Us
 	/**
 	 * 可根据用户名搜索
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月29日 上午9:13:51
 	 */
 	public List<UserSign> selectByUserSign(UserSign userSign) {
@@ -59,7 +57,6 @@ public class UserSignServiceImpl extends BaseServiceImpl<UserSign> implements Us
 	/**
 	 * 通过用户ID查找该用户的用户签到记录
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年12月1日 下午1:57:00
 	 */
 	public UserSign selectByUserName(Integer userId) {
@@ -69,7 +66,6 @@ public class UserSignServiceImpl extends BaseServiceImpl<UserSign> implements Us
 	/**
 	 * 用户签到
 	 * 
-	 * @author zhongguocheng<br>
 	 * @throws ParseException
 	 * @date 2017年12月5日 上午10:25:52
 	 */
@@ -136,7 +132,6 @@ public class UserSignServiceImpl extends BaseServiceImpl<UserSign> implements Us
 	/**
 	 * 查询今日签到数
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年12月6日 下午8:30:57
 	 */
 	public Integer selectTodaySignCount(Date date) {

@@ -3,7 +3,6 @@ package com.ruiec.web.model;
 /**
  * 附件模型类
  * 
- * @author Jerry<br>
  * @date 2017年10月30日 下午4:02:00
  */
 public class ArticleAttachment extends BaseModel {

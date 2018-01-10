@@ -24,7 +24,6 @@ import com.ruiec.web.service.ModuleService;
 /**
  * 帖子回复控制器
  * 
- * @author Jerry<br>
  * @date 2017年10月27日 下午2:43:20
  */
 @Controller
@@ -39,7 +38,6 @@ public class ArticleReplayController extends BaseAdminController {
 	/**
 	 * 帖子回复列表
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月27日 下午4:13:40
 	 */
 	@RequestMapping(value = "/list")
@@ -57,7 +55,6 @@ public class ArticleReplayController extends BaseAdminController {
 	/**
 	 * 添加回复初始页
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月27日 下午4:14:23
 	 */
 	@RequestMapping(value = "/add")
@@ -70,7 +67,6 @@ public class ArticleReplayController extends BaseAdminController {
 	/**
 	 * 保存回复信息
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月27日 下午4:58:04
 	 */
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
@@ -84,7 +80,6 @@ public class ArticleReplayController extends BaseAdminController {
 	/**
 	 * 更新回复初始页
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月27日 下午5:32:02
 	 */
 	@RequestMapping(value = "/edit")
@@ -102,7 +97,6 @@ public class ArticleReplayController extends BaseAdminController {
 	/**
 	 * 更新回复信息
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月27日 下午5:36:24
 	 */
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
@@ -118,7 +112,6 @@ public class ArticleReplayController extends BaseAdminController {
 	/**
 	 * 删除回复信息
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月27日 下午5:36:43
 	 */
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)

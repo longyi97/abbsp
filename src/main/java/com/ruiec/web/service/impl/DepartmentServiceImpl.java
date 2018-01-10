@@ -14,7 +14,6 @@ import com.ruiec.web.service.DepartmentService;
 /**
  * 部门服务
  * 
- * @author bingo<br>
  * @date 2017年10月20日 上午10:09:49
  */
 @Service
@@ -32,7 +31,6 @@ public class DepartmentServiceImpl extends BaseServiceImpl<Department> implement
 	/**
 	 * 获取直接子类列表
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月26日 下午7:20:15
 	 */
 	@Override
@@ -43,7 +41,6 @@ public class DepartmentServiceImpl extends BaseServiceImpl<Department> implement
 	/**
 	 * 判断是否有下级部门
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:55:28
 	 */
 	public Boolean hasSubDepartments(List<Department> all, Integer parentId) {
@@ -58,7 +55,6 @@ public class DepartmentServiceImpl extends BaseServiceImpl<Department> implement
 	/**
 	 * 按层级组装部门(子集set入对象中)
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:30:00
 	 */
 	public void getSubsDepartments(List<Department> all, Department department) {
@@ -77,7 +73,6 @@ public class DepartmentServiceImpl extends BaseServiceImpl<Department> implement
 	/**
 	 * 按层级排序部门
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月8日 下午3:50:25
 	 */
 	public void subList(List<Department> all, List<Department> contentList, Integer parentId) {
@@ -94,7 +89,6 @@ public class DepartmentServiceImpl extends BaseServiceImpl<Department> implement
 	/**
 	 * 组装部门（按部门层级排序，通过名称前面加符号）
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月17日 下午3:11:39
 	 */
 	public void subListAddStr(List<Department> all, List<Department> contentList,Integer parentId, String strTab) {
@@ -115,7 +109,6 @@ public class DepartmentServiceImpl extends BaseServiceImpl<Department> implement
 	 * 获取所有部门（按部门层级排序，通过名称前面加符号）
 	 * 
 	 * @param 层级符号
-	 * @author bingo<br>
 	 * @date 2017年11月17日 下午3:11:39
 	 */
 	public List<Department> getDepartmentsSort(String strTab) {

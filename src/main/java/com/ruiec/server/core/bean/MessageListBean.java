@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * 消息列表bean
- * @author 刘立雯
  * Date：2017年08月02日
  */
 public class MessageListBean implements Serializable {

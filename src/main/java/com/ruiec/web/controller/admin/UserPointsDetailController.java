@@ -13,7 +13,6 @@ import com.ruiec.web.service.UserPointsDetailService;
 
 /**
  * 用户积分明细控制器
- * @author Jerry<br>
  * @date 2017年11月29日 上午10:17:48
  */
 @Controller
@@ -25,7 +24,6 @@ public class UserPointsDetailController extends BaseAdminController{
 	
 	/**
 	 * 用户积分详情列表
-	 * @author Jerry<br>
 	 * @date 2017年11月29日 上午10:24:20
 	 */
 	@RequestMapping(value = "/list")

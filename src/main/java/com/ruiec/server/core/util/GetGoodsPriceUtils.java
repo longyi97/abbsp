@@ -1,7 +1,4 @@
 /**
- * 版权所有：深圳源中瑞科技有限公司<br>
- * 网 址：www.ruiec.com<br>
- * 电 话：0755-33581131<br><br>
  */
 package com.ruiec.server.core.util;
 
@@ -22,7 +19,6 @@ import org.apache.http.util.EntityUtils;
 
 /**
  * 获取商品价格行情工具类<br>
- * @author 杨龙香<br>
  * Version: 1.0<br>
  * Date: 2016-12-24
  */
@@ -43,7 +39,6 @@ public class GetGoodsPriceUtils {
 	
 	/**
 	 * 根据url和参数获取商品价格
-	 * @author 杨龙香<br>
 	 * Version: 1.0<br>
 	 * Date: 2016-12-24
 	 */
@@ -99,7 +94,6 @@ public class GetGoodsPriceUtils {
 	
 	/**
 	 * bean销毁时调用函数
-	 * @author 杨龙香<br>
 	 * Version: 1.0<br>
 	 * Date: 2016-12-24
 	 */

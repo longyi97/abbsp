@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * 部门任务统计bean
- * @author 刘立雯
  * Date：2017年07月13日
  */
 public class DepartmentalTasksStatisticBean implements Serializable {

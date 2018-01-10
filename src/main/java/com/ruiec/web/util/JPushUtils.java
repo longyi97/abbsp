@@ -17,7 +17,6 @@ import cn.jpush.api.push.model.notification.IosNotification;
 import cn.jpush.api.push.model.notification.Notification;
 /**
  * 极光推送工具接口
- * @author 贺云<br>
  * Version: 1.0<br>
  * Date: 2017年7月27日
  */
@@ -33,7 +32,6 @@ public class JPushUtils {
 		 * @param personIds 推送给指定用户的ID
 		 * @param msgId 消息ID
 		 * @param map 需求带上的推送内容（目前暂时不使用）
-		 * @author 贺云<br>
 		 * Version: 1.0<br>
 		 * Date: 2017年7月27日
 		 */
@@ -68,7 +66,6 @@ public class JPushUtils {
 		 * @param personIds 推送给指定用户的ID
 		 * @param msgId 消息ID
 		 * @param map 需求带上的推送内容（目前暂时不使用）
-		 * @author 贺云<br>
 		 * Version: 1.0<br>
 		 * Date: 2017年7月27日
 		 */

@@ -13,7 +13,6 @@ import com.ruiec.web.service.ConfigService;
 /**
  * 系统配置服务实现类
  * 
- * @author bingo<br>
  * @date 2017年11月29日 上午9:03:00
  */
 @Service
@@ -32,7 +31,6 @@ public class ConfigServiceImpl extends BaseServiceImpl<Config> implements Config
 	/**
 	 * 通过key获取系统配置
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月29日 下午4:43:53
 	 */
 	@Override
@@ -43,7 +41,6 @@ public class ConfigServiceImpl extends BaseServiceImpl<Config> implements Config
 	/**
 	 * 通过key更新系统配置
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月29日 下午4:47:16
 	 */
 	@Override

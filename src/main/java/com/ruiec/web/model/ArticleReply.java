@@ -3,7 +3,6 @@ package com.ruiec.web.model;
 /**
  * 帖子回复模型
  * 
- * @author Jerry<br>
  * @date 2017年10月27日 下午1:57:26
  */
 public class ArticleReply extends BaseModel {

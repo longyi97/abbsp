@@ -1,13 +1,9 @@
 /**
- * 版权所有：深圳源中瑞科技有限公司<br>
- * 网 址：www.ruiec.com<br>
- * 电 话：0755-33581131<br><br>
  */
 package com.ruiec.web.common;
 
 /**
  * ajax响应消息bean
- * @author 肖学良<br>
  * Version: 1.0<br>
  * Date: 2016年1月11日
  */
@@ -26,7 +22,6 @@ public class Message {
 	}
 	/**
 	 * 提示信息
-	 * @author 杨磊<br>
 	 * Date: 2016年1月19日
 	 */
  public String getInfo() {
@@ -34,7 +29,6 @@ public class Message {
 	}
 /**
  * 提示信息
- * @author 杨磊<br>
  * Date: 2016年1月19日
  */
 	public void setInfo(String info) {
@@ -43,7 +37,6 @@ public class Message {
 
 /**
   * 传回的数据
-  * @author 杨磊<br>
   * Date: 2016年1月19日
   */
 	public Object getData() {
@@ -52,7 +45,6 @@ public class Message {
 	
  /**
   * 传回的数据
-  * @author 杨磊<br>
   * Date: 2016年1月19日
   */
 	public void setData(Object data) {

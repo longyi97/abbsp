@@ -5,7 +5,6 @@ import java.io.Serializable;
 /**
  * 个人统计bean
  * 
- * @author 刘立雯 Date：2017年07月12日
  */
 public class PersonalStatisticBean implements Serializable {
 

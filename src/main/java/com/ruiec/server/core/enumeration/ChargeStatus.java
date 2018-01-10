@@ -3,7 +3,6 @@ package com.ruiec.server.core.enumeration;
 
 /**
  * 充值状态
- * @author 熊华松<br>
  * Version: 1.0<br>
  * Date: 2016年03月31日
  */

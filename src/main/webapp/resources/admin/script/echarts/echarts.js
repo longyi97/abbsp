@@ -7019,7 +7019,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * zrender: 生成唯一id
 	 *
-	 * @author errorrik (errorrik@gmail.com)
 	 */
 
 
@@ -7038,7 +7037,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * 事件扩展
 	 * @module zrender/mixin/Eventful
-	 * @author Kener (@Kener-林峰, kener.linfeng@gmail.com)
 	 *         pissang (https://www.github.com/pissang)
 	 */
 
@@ -7336,7 +7334,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * 提供变换扩展
 	 * @module zrender/mixin/Transformable
-	 * @author pissang (https://www.github.com/pissang)
 	 */
 
 
@@ -9416,7 +9413,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        /**
 	         * @exports zrender/tool/log
-	         * @author Kener (@Kener-林峰, kener.linfeng@gmail.com)
 	         */
 	        module.exports = function() {
 	            if (config.debugMode === 0) {
@@ -9458,7 +9454,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    /**
 	     * config默认配置项
 	     * @exports zrender/config
-	     * @author Kener (@Kener-林峰, kener.linfeng@gmail.com)
 	     */
 	    var config = {
 	        /**
@@ -11426,7 +11421,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * 可以用于 isInsidePath 判断以及获取boundingRect
 	 *
 	 * @module zrender/core/PathProxy
-	 * @author Yi Shen (http://www.github.com/pissang)
 	 */
 
 	 // TODO getTotalLength, getPointAtLength
@@ -12127,7 +12121,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * 曲线辅助模块
 	 * @module zrender/core/curve
-	 * @author pissang(https://www.github.com/pissang)
 	 */
 
 
@@ -12669,7 +12662,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * @author Yi Shen(https://github.com/pissang)
 	 */
 
 
@@ -14400,7 +14392,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * Catmull-Rom spline 插值折线
 	 * @module zrender/shape/util/smoothSpline
-	 * @author pissang (https://www.github.com/pissang)
 	 *         Kener (@Kener-林峰, kener.linfeng@gmail.com)
 	 *         errorrik (errorrik@gmail.com)
 	 */
@@ -14476,7 +14467,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * 贝塞尔平滑曲线
 	 * @module zrender/shape/util/smoothBezier
-	 * @author pissang (https://www.github.com/pissang)
 	 *         Kener (@Kener-林峰, kener.linfeng@gmail.com)
 	 *         errorrik (errorrik@gmail.com)
 	 */
@@ -15397,7 +15387,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * echarts设备环境识别
 	 *
 	 * @desc echarts基于Canvas，纯Javascript图表库，提供直观，生动，可交互，可个性化定制的数据统计图表。
-	 * @author firede[firede@firede.us]
 	 * @desc thanks zepto.
 	 */
 
@@ -15511,7 +15500,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * Handler控制模块
 	 * @module zrender/Handler
-	 * @author Kener (@Kener-林峰, kener.linfeng@gmail.com)
 	 *         errorrik (errorrik@gmail.com)
 	 *         pissang (shenyi.914@gmail.com)
 	 */
@@ -16039,7 +16027,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * 事件辅助类
 	 * @module zrender/core/event
-	 * @author Kener (@Kener-林峰, kener.linfeng@gmail.com)
 	 */
 
 
@@ -16352,9 +16339,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * Storage内容仓库模块
 	 * @module zrender/Storage
-	 * @author Kener (@Kener-林峰, kener.linfeng@gmail.com)
-	 * @author errorrik (errorrik@gmail.com)
-	 * @author pissang (https://github.com/pissang/)
 	 */
 
 
@@ -16600,7 +16584,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * 动画主类, 调度和管理所有动画控制器
 	 *
 	 * @module zrender/animation/Animation
-	 * @author pissang(https://github.com/pissang)
 	 */
 	// TODO Additive animation
 	// http://iosoteric.com/additive-animations-animatewithduration-in-ios-8/
@@ -16827,7 +16810,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * Default canvas painter
 	 * @module zrender/Painter
-	 * @author Kener (@Kener-林峰, kener.linfeng@gmail.com)
 	 *         errorrik (errorrik@gmail.com)
 	 *         pissang (https://www.github.com/pissang)
 	 */
@@ -17562,7 +17544,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/**
 	 * @module zrender/Layer
-	 * @author pissang(https://www.github.com/pissang)
 	 */
 
 
@@ -33689,7 +33670,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Graph data structure
 	 *
 	 * @module echarts/data/Graph
-	 * @author Yi Shen(https://www.github.com/pissang)
 	 */
 
 
@@ -41016,7 +40996,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/**
 	 * @file defines echarts Heatmap Chart
-	 * @author Ovilia (me@zhangwenli.com)
 	 * Inspired by https://github.com/mourner/simpleheat
 	 *
 	 * @module

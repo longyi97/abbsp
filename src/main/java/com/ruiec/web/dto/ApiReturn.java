@@ -1,7 +1,6 @@
 package com.ruiec.web.dto;
 /**
  * 手机端公用返回操作结果的bean
- * @author 刘立雯
  * Date：2016年07月18日
  */
 public class ApiReturn {

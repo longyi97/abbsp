@@ -13,7 +13,6 @@ import com.ruiec.web.model.User;
 
 /**
  * 登录拦截器, 此拦截器将可以避免未经登录之间访问登录后才能跳转的页面
- * @author Jerry<br>
  * Version: 1.0<br>
  * Date: 2017年11月00日
  */

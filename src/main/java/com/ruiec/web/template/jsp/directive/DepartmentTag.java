@@ -12,7 +12,6 @@ import com.ruiec.web.util.SpringUtils;
 /**
  * 部门标签
  * 
- * @author bingo<br>
  * @date 2017年10月26日 下午3:11:08
  */
 public class DepartmentTag extends SimpleTagSupport {
@@ -45,7 +44,6 @@ public class DepartmentTag extends SimpleTagSupport {
 	/**
 	 * 根据父级ID，返回模型
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月26日 下午5:19:56
 	 */
 	@Override

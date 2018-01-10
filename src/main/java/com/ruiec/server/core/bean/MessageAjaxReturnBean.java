@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * 消息ajax加载返回bean
- * @author 刘立雯
  * Date：2017年08月02日
  */
 public class MessageAjaxReturnBean implements Serializable {

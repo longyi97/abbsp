@@ -24,7 +24,6 @@ import com.ruiec.web.service.UserService;
 /**
  * 前台登录控制器
  * 
- * @author Jerry<br>
  * @date 2017年10月24日 下午2:41:09
  */
 @Controller
@@ -41,7 +40,6 @@ public class LoginController extends BaseAdminController {
 	/**
 	 * 跳转登录页面
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月24日 下午2:49:19
 	 */
 	@RequestMapping("/view")
@@ -53,7 +51,6 @@ public class LoginController extends BaseAdminController {
 	/**
 	 * 登录
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月24日 下午3:04:57
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
@@ -103,7 +100,6 @@ public class LoginController extends BaseAdminController {
 	/**
 	 * 退出登录
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月25日 上午11:08:52
 	 */
 	@RequestMapping("/logout")

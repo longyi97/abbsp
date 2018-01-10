@@ -34,7 +34,6 @@ import com.ruiec.web.service.ModuleService;
 /**
  * 帖子列表
  * 
- * @author 王伟
  * @date 2017年12月16日 下午7:34:14
  */
 @Controller
@@ -55,7 +54,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * 根据版块ID查询 articelSelectDTO（接收参数类）
 	 * 
-	 * @author 王伟<br>
 	 * @date 2017年11月1日 下午3:55:16
 	 */
 	@RequestMapping(value = "/list")
@@ -85,7 +83,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * 初始化增加帖子页面
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月16日 下午7:34:14
 	 */
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
@@ -99,7 +96,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * 发帖
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月16日 下午7:34:14
 	 */
 	@RequestMapping(value = "save", method = RequestMethod.POST)
@@ -139,7 +135,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * 获取子版块
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月7日 下午3:35:34
 	 */
 	@ResponseBody
@@ -156,7 +151,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * 获取主题
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月7日 下午3:36:03
 	 */
 	@ResponseBody
@@ -172,7 +166,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * 获取所有版块（按层级）
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:28:59
 	 */
 	@ResponseBody
@@ -221,7 +214,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * List contains method
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月17日 下午4:48:11
 	 */
 	public boolean contains(List<Module> list, Module item) {
@@ -242,7 +234,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * 迭代获取所有父级
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月16日 下午10:24:17
 	 */
 	public void getParent(List<Module> contentList, Module module) {
@@ -258,7 +249,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * 按层级组装
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:30:00
 	 */
 	public void getSubsModules(List<Module> all, Module module) {
@@ -279,7 +269,6 @@ public class ArticleListContrller extends BaseAdminController {
 	/**
 	 * 判断是否有下级
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月15日 下午2:55:28
 	 */
 	public boolean hasSubModules(List<Module> all, Integer parentId) {

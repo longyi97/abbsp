@@ -7,7 +7,6 @@ import org.hibernate.validator.constraints.NotBlank;
 /**
  * 前台用户模型
  * 
- * @author 钟国城<br>
  * @date 2017年11月8日 上午9:35:00
  */
 public class User extends BaseModel {

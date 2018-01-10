@@ -5,7 +5,6 @@ import java.io.Serializable;
 
 /**
  * 排序基类
- * @author 熊华松<br>
  * Version 1.0<br>
  * Date: 2017年01月05日
  */

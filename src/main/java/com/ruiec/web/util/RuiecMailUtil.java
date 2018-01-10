@@ -1,9 +1,3 @@
-///*
-// * 版权所有：深圳源中瑞科技有限公司<br>
-// * 网 址：www.ruiec.com<br>
-// * 电 话：0755-33581131<br><br>
-// */
-//
 //package com.ruiec.web.util;
 //
 //import java.util.Date;
@@ -23,8 +17,7 @@
 ///**
 // * 邮件工具类
 // * 
-// * @author 熊华松<br>
-// * Version 1.0<br>
+// // * Version 1.0<br>
 // * Date: 2015年12月31日
 // */
 //public class RuiecMailUtil {
@@ -69,8 +62,7 @@
 //	 * 系统邮件发送工具：发送html内容的邮件
 //	 * @param htmlContent
 //	 * @return
-//	 * @author 熊华松
-//	 */
+//	 //	 */
 //	public static boolean sendHtmlMail(String receiver, String subject, String htmlContent) {
 //		if (RuiecStringUtil.checkNull(receiver, subject, htmlContent)) {
 //			return false;
@@ -88,8 +80,7 @@
 //	 * 系统邮件发送工具：发送text内容的邮件
 //	 * @param textContent
 //	 * @return
-//	 * @author 熊华松
-//	 */
+//	 //	 */
 //	public static boolean sendTextMail(String receiver, String subject, String textContent) {
 //		if (RuiecStringUtil.checkNull(receiver, subject, textContent)) {
 //			return false;
@@ -110,8 +101,7 @@
 //	 * @param email 要验证的邮箱
 //	 * @param userName 用户名
 //	 * @return
-//	 * @author 熊华松
-//	 */
+//	 //	 */
 //	public static String generateMailContent(String domainName, String link, String checkCode, String email, String userName) {
 //		/*return "<a href=\'" + domainName + "/" + link + "?checkCode=" + checkCode +"&email="+email+"\'>"
 //				+ domainName + "/" + link + "?checkcode=" + checkCode + "&email=" + email

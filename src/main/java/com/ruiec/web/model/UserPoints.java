@@ -3,7 +3,6 @@ package com.ruiec.web.model;
 /**
  * 积分记录模型类
  * 
- * @author Jerry<br>
  * @date 2017年11月28日 下午4:25:42
  */
 public class UserPoints extends BaseModel {

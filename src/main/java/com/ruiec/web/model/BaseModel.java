@@ -6,7 +6,6 @@ import java.util.Date;
 
 /**
  * 模型基类
- * @author 熊华松<br>
  * Version 1.0<br>
  * Date: 2017年01月05日
  */

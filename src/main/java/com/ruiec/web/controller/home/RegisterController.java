@@ -17,7 +17,6 @@ import com.ruiec.web.util.AdminControllerAspect;
 /**
  * 前台注册控制器
  * 
- * @author Jerry<br>
  * @date 2017年10月24日 下午4:53:52
  */
 @Controller
@@ -30,7 +29,6 @@ public class RegisterController extends AdminControllerAspect {
 	/**
 	 * 用户注册初始页
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月26日 下午8:11:53
 	 */
 	@RequestMapping("/register")
@@ -41,7 +39,6 @@ public class RegisterController extends AdminControllerAspect {
 	/**
 	 * 保存用户注册信息
 	 * 
-	 * @author Jerry<br>
 	 * @date 2017年10月24日 下午5:39:23
 	 */
 	@RequestMapping(value = "/save", method = RequestMethod.POST)

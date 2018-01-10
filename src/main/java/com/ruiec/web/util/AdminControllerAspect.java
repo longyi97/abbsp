@@ -1,7 +1,3 @@
-/*
- * 版权所有：深圳源中瑞科技有限公司<br>
-
- */
 package com.ruiec.web.util;
 
 import java.util.Date;
@@ -26,7 +22,6 @@ import com.ruiec.web.service.BaseService;
 
 /**
  * 后台控制器切面类(主要用于添加实体时统一设置添加时间、修改时间、id和实体校验、记录日志等功能)
- * @author 杨龙香<br>
  * Version 1.0<br>
  * Date: 2017年01月05日
  */
@@ -41,7 +36,6 @@ public class AdminControllerAspect {
 	
 	/**
 	 * 保存实体切点(切点为BaseService的insert方法，以下的切点可以类比)
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月05日
 	 */
 	@Pointcut("execution(public * com.ruiec.web.dao.*.insert*(..))")
@@ -50,7 +44,6 @@ public class AdminControllerAspect {
 	
 	/**
 	 * 保存实体过程中调用
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月05日
 	 */
 	@Around("saveEntityPointCut() && args(model,..)")
@@ -77,7 +70,6 @@ public class AdminControllerAspect {
 	
 	/**
 	 * 修改实体切点
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月05日
 	 */
 	@Pointcut("execution(public * com.ruiec.web.dao.*.update*(..))")
@@ -86,7 +78,6 @@ public class AdminControllerAspect {
 	
 	/**
 	 * 修改实体过程中调用
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月05日
 	 */
 	@Around("updateEntityPointCut() && args(model,..)")
@@ -116,7 +107,6 @@ public class AdminControllerAspect {
 	
 	/**
 	 * 删除实体切点
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月05日
 	 */
 	@Pointcut("execution(public * com.ruiec.web.dao.*.delete*(..))")
@@ -125,7 +115,6 @@ public class AdminControllerAspect {
 	
 	/**
 	 * 修改实体过程中调用
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月05日
 	 */
 	@Around("deleteEntityPointCut() && args(ids,c,..)")
@@ -147,7 +136,6 @@ public class AdminControllerAspect {
 	
 	/**
 	 * 校验实体
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月05日
 	 */
 	private boolean validate(Object entity){
@@ -163,7 +151,6 @@ public class AdminControllerAspect {
 	
 	/**
 	 * 使字符串的首个大写字母变为小写字母(此处不做异常判断，其它地方不能随便调用)
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月05日
 	 */
 	private String changeTheFirstCharToLowerCase(String str){
@@ -180,7 +167,6 @@ public class AdminControllerAspect {
 	
 	/**
 	 * 手动注入校验bean,不注入会报错(因为aop是什么在applicationContext而不是在spring mvc下，所以需要在applicationContext中注入合适的校验器)
-	 * @author 杨龙香<br>
 	 * Date: 2017年01月05日
 	 */
 	@Bean

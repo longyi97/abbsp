@@ -21,7 +21,6 @@ import com.ruiec.web.service.UserPointsService;
 
 /**
  * 帖子回复实现类
- * @author Jerry<br>
  * @date 2017年10月27日 下午2:07:55
  */		  
 @Service("articleReplyServiceImpl")
@@ -44,7 +43,6 @@ public class ArticleReplyServiceImpl extends BaseServiceImpl<ArticleReply> imple
 	
 	/***
 	 * 通过帖子id查询回复数量
-	 * @author 王伟
 	 * @Date:2017年10月29日16:51:15
 	 */
 	@Override
@@ -54,7 +52,6 @@ public class ArticleReplyServiceImpl extends BaseServiceImpl<ArticleReply> imple
 	
 	/***
 	 * 通过id删除评论
-	 * @author 王伟
 	 * @date：2017年10月31日11:17:53
 	 */
 	@Override
@@ -64,7 +61,6 @@ public class ArticleReplyServiceImpl extends BaseServiceImpl<ArticleReply> imple
 	
 	/***
 	 * 通过帖子查询回帖的数量
-	 * @author 王伟
 	 * @date：2017年11月9日16:11:42
 	 */
 	@Override
@@ -76,7 +72,6 @@ public class ArticleReplyServiceImpl extends BaseServiceImpl<ArticleReply> imple
 	 * 条件连表查询(回复人名称，发帖时间查询)
 	 * @param id
 	 * @return
-	 * @author 王伟
 	 * @date:2017年11月15日16:10:02
 	 */
 	@Override
@@ -85,7 +80,6 @@ public class ArticleReplyServiceImpl extends BaseServiceImpl<ArticleReply> imple
 	}
 	/**
 	 * 查询子类是否存在
-	 * @author 王伟
 	 * @date:2017年11月15日16:10:02
 	 */
 	@Override
@@ -95,7 +89,6 @@ public class ArticleReplyServiceImpl extends BaseServiceImpl<ArticleReply> imple
 	
 	/**
 	 * 通过帖子id，回复id得到是否有下级
-	 * @author 王伟
 	 * @date:2017年11月16日11:26:07
 	 */
 	@Override
@@ -106,7 +99,6 @@ public class ArticleReplyServiceImpl extends BaseServiceImpl<ArticleReply> imple
 	/**
 	 * 根据条件搜索回复贴
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月17日 上午11:14:59
 	 */
 	public List<ArticleReplyDTO> selectByArticleReplyAll(ArticleReplyDTO articleReplyDTO) {
@@ -116,7 +108,6 @@ public class ArticleReplyServiceImpl extends BaseServiceImpl<ArticleReply> imple
 	/**
 	 * 保存回复
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月1日 下午4:28:32
 	 */
 	@Override
@@ -168,7 +159,6 @@ public class ArticleReplyServiceImpl extends BaseServiceImpl<ArticleReply> imple
 	 * 是否积分上限
 	 * 
 	 * @return 末达上限返回正常分值；临界上限返回上限值减当前分值；超过上限返回0.00
-	 * @author bingo<br>
 	 * @date 2017年12月5日 下午5:09:17
 	 */
 	public Float isPointsMax(Float max, Float current, Float points) {

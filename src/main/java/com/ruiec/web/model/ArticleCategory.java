@@ -3,7 +3,6 @@ package com.ruiec.web.model;
 /**
  * 主题模型类
  * 
- * @author Jerry<br>
  * @date 2017年10月25日 下午8:10:24
  */
 public class ArticleCategory extends BaseModel {

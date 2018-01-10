@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * 部门用户中间表
- * @author 钟国城<br>
  * @date 2017年11月10日 下午5:26:52
  */
 public class DepartmentUser {

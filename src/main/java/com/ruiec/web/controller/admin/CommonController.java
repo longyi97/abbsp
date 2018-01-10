@@ -19,7 +19,6 @@ import com.ruiec.web.service.NavigationService;
  * 
  * 公共控制器
  * 
- * @author 肖学良<br>
  * @modify bingo<br>
  * @date 2017年10月25日 上午10:43:55
  */
@@ -35,7 +34,6 @@ public class CommonController extends BaseAdminController {
 	/**
 	 * 输出图片验证码
 	 * 
-	 * @author 肖学良<br>
 	 * @modify bingo<br>
 	 * @date 2017年12月7日 上午11:11:23
 	 */
@@ -49,7 +47,6 @@ public class CommonController extends BaseAdminController {
 	/**
 	 * 后台主界面
 	 * 
-	 * @author 刘立雯<br>
 	 * @modify bingo<br>
 	 * @date 2017年12月7日 上午11:11:46
 	 */
@@ -61,7 +58,6 @@ public class CommonController extends BaseAdminController {
 	/**
 	 * 后台菜单
 	 * 
-	 * @author 刘立雯<br>
 	 * @modify bingo<br>
 	 * @date 2017年12月7日 上午11:12:00
 	 */
@@ -76,7 +72,6 @@ public class CommonController extends BaseAdminController {
 	/**
 	 * 后台主界面中间
 	 * 
-	 * @author 刘立雯<br>
 	 * @modify bingo<br>
 	 * @date 2017年12月7日 上午11:12:29
 	 */

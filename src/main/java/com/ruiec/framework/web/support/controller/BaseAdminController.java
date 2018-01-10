@@ -1,8 +1,5 @@
 /**
  * 
- * 版权所有：深圳源中瑞科技有限公司<br>
- * 网 址：www.ruiec.com<br>
- * 电 话：0755-33581131<br><br>
  */
 package com.ruiec.framework.web.support.controller;
 
@@ -20,7 +17,6 @@ import com.ruiec.framework.web.support.controller.editor.DateEditor;
 import com.ruiec.web.util.RuiecDateUtils;
 /**
  * 后台基础控制器
- * @author 肖学良<br>
  * Version: 1.0<br>
  * Date: 2015年12月23日
  */
@@ -32,7 +28,6 @@ public class BaseAdminController extends BaseController{
 	
 	/**
 	 * 注册数据转换器
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	@InitBinder
@@ -43,7 +38,6 @@ public class BaseAdminController extends BaseController{
 	
 	/**
 	 * 统一异常处理
-	 * @author 肖学良<br>
 	 * Date: 2016年1月6日
 	 */
 	@ExceptionHandler(Throwable.class)
@@ -54,7 +48,6 @@ public class BaseAdminController extends BaseController{
 	
 	/**
 	 * 添加request域错误信息
-	 * @author 肖学良<br>
 	 * Date: 2016年1月7日
 	 */
 	protected void addErrorMessageToRequestScope(String message){
@@ -64,7 +57,6 @@ public class BaseAdminController extends BaseController{
 	
 	/**
 	 * 添加session域错误信息
-	 * @author 肖学良<br>
 	 * Date: 2016年1月7日
 	 */
 	protected void addErrorMessageToSessionScope(String message){
@@ -74,7 +66,6 @@ public class BaseAdminController extends BaseController{
 	
 	/**
 	 * 获取年份数组
-	 * @author 刘立雯
 	 * Date：2016年8月23日
 	 * @return
 	 */

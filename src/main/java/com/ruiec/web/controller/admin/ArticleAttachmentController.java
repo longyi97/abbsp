@@ -18,7 +18,6 @@ import com.ruiec.web.service.ArticleAttachmentService;
 /**
  * 帖子附件控制器
  * 
- * @author bingo<br>
  * @date 2017年12月8日 下午6:50:41
  */
 @Controller
@@ -31,7 +30,6 @@ public class ArticleAttachmentController extends BaseAdminController {
 	/**
 	 * 列表页面
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月8日 下午7:01:25
 	 */
 	@RequestMapping("/list")

@@ -14,7 +14,6 @@ import com.ruiec.web.util.SpringUtils;
 
 /**
  * 前台菜单标签
- * @author 钟国城<br>
  * @date 2017年12月27日 上午10:07:55
  */
 public class HomeMenuTag  extends SimpleTagSupport{

@@ -5,7 +5,6 @@ import java.util.regex.Pattern;
 
 /**
  * 去除所有标签
- * @author 钟国城<br>
  * @date 2017年12月11日 下午9:48:50
  */
 public class RuiecRemoveHTML {
@@ -18,7 +17,6 @@ public class RuiecRemoveHTML {
 	/**
 	 * 删除Html标签
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年12月11日 下午9:02:42
 	 */
 	public static String delHTMLTag(String htmlStr) {

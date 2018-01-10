@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * 成员Bean
- * @author 刘立雯
  * Date：2017年08月15日
  */
 public class MemberBean implements Serializable {

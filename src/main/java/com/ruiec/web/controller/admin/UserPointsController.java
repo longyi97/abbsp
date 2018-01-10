@@ -18,7 +18,6 @@ import com.ruiec.web.service.UserService;
 
 /**
  * 用户积分管理控制器
- * @author Jerry<br>
  * @date 2017年11月29日 上午10:16:54
  */
 @Controller
@@ -34,7 +33,6 @@ public class UserPointsController extends BaseAdminController{
 	
 	/**
 	 * 用户积分列表
-	 * @author Jerry<br>
 	 * @date 2017年11月29日 上午10:24:20
 	 */
 	@RequestMapping(value = "/list")
@@ -52,7 +50,6 @@ public class UserPointsController extends BaseAdminController{
 	
 	/**
 	 * 显示积分操作初始页
-	 * @author Jerry<br>
 	 * @date 2017年11月22日 下午5:23:14
 	 */
 	@RequestMapping("/add")
@@ -62,7 +59,6 @@ public class UserPointsController extends BaseAdminController{
 	
 	/**
 	 * 增加积分操作
-	 * @author Jerry,钟国城<br>
 	 * @date 2017年11月22日 下午5:25:53
 	 */
 	@RequestMapping("/save")
@@ -88,7 +84,6 @@ public class UserPointsController extends BaseAdminController{
 	
 	/**
 	 * 验证是否存在用户名
-	 * @author Jerry<br>
 	 * @date 2017年11月30日 上午9:25:07
 	 */
 	@ResponseBody

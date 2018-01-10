@@ -4,7 +4,6 @@ package com.ruiec.server.core.enumeration;
 /**
  * 分红发放状态枚举
  * 
- * @author 熊华松<br>
  * Version 1.0<br>
  * Date: 2016-07-08
  */

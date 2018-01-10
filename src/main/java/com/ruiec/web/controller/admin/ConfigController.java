@@ -19,7 +19,6 @@ import com.ruiec.web.service.ConfigService;
 /**
  * 系统配置控制器
  * 
- * @author bingo<br>
  * @date 2017年11月29日 上午9:08:11
  */
 @Controller
@@ -34,7 +33,6 @@ public class ConfigController extends BaseAdminController {
 	/**
 	 * 进入编辑页面
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月29日 上午9:13:56
 	 */
 	@RequestMapping("/edit")
@@ -50,7 +48,6 @@ public class ConfigController extends BaseAdminController {
 	/**
 	 * 更新
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月29日 上午9:16:19
 	 */
 	@RequestMapping("/update")

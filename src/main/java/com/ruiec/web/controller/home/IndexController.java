@@ -34,7 +34,6 @@ import com.ruiec.web.util.RuiecGetImage;
 /**
  * 前台首页控制器
  * 
- * @author Jerry<br>
  * @date 2017年10月24日 下午4:37:48
  */
 @Controller
@@ -61,7 +60,6 @@ public class IndexController extends BaseAdminController {
 	/**
 	 * 跳转首页
 	 * 
-	 * @author Jerry<br>
 	 * @modify bingo、zhongguocheng<br>
 	 * @date 2017年10月31日 下午4:13:59
 	 */
@@ -211,7 +209,6 @@ public class IndexController extends BaseAdminController {
 	/**
 	 * 版块有子版块? 首页展示子版块: 帖子列表
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月10日 下午5:05:07
 	 */
 	@RequestMapping("/subIndex")

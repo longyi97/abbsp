@@ -13,7 +13,6 @@ import com.ruiec.web.util.RuiecDateUtils;
 
 /**
  * 用户标签
- * @author 刘立雯
  * Date：2017年08月15日
  */
 public class DateTag extends SimpleTagSupport {

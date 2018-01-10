@@ -32,7 +32,6 @@ import com.ruiec.web.util.RuiecStringUtil;
 /**
  * 后台用户管理控制器
  * 
- * @author 钟国城<br>
  * @date 2017年10月17日 下午2:11:01
  */
 @Controller
@@ -49,7 +48,6 @@ public class AdminUserController extends BaseAdminController {
 	/**
 	 * 用户列表
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月20日 下午2:11:01
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -75,7 +73,6 @@ public class AdminUserController extends BaseAdminController {
 	/**
 	 * 跳转到新增用户页面
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月20日 下午2:11:01
 	 */
 	@RequestMapping("/add")
@@ -87,7 +84,6 @@ public class AdminUserController extends BaseAdminController {
 	/**
 	 * 新增用户
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月20日 下午2:11:01
 	 */
 	@ResponseBody
@@ -131,7 +127,6 @@ public class AdminUserController extends BaseAdminController {
 	/**
 	 * 验证用户名
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月17日 下午2:11:01
 	 */
 	@ResponseBody
@@ -148,7 +143,6 @@ public class AdminUserController extends BaseAdminController {
 	/**
 	 * 跳转到管理用户页面
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月20日 下午2:31:01
 	 */
 	@RequestMapping(value = "/edit")
@@ -166,7 +160,6 @@ public class AdminUserController extends BaseAdminController {
 	/**
 	 * 管理用户
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月20日 下午2:31:01
 	 */
 	@ResponseBody
@@ -214,7 +207,6 @@ public class AdminUserController extends BaseAdminController {
 	/**
 	 * 跳转修改密码
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月17日 下午2:11:01
 	 */
 	@RequestMapping("updatePwd")
@@ -226,7 +218,6 @@ public class AdminUserController extends BaseAdminController {
 	/**
 	 * 修改密码
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月17日 下午2:11:01
 	 */
 	@ResponseBody
@@ -244,7 +235,6 @@ public class AdminUserController extends BaseAdminController {
 	/**
 	 * 删除用户
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年10月20日 下午2:31:01
 	 */
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)

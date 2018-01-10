@@ -5,7 +5,6 @@ import java.util.Date;
 /**
  * 签到明细模型
  * 
- * @author 钟国城<br>
  * @date 2017年11月28日 下午3:56:58
  */
 public class UserSignDetail extends BaseModel {

@@ -5,7 +5,6 @@ import java.util.List;
 /**
  * 字符串分层
  * 
- * @author 张威斌<br>
  * @date 2017年9月28日 下午2:42:22
  */
 public class StringLayeredUtil<T> {
@@ -13,7 +12,6 @@ public class StringLayeredUtil<T> {
 	/**
 	 * 获取直接子类
 	 * 
-	 * @author 张威斌<br>
 	 * @date 2017年9月28日 下午2:42:46
 	 */
 	public static List<String> getSub(List<String> list, List<String> sons, String parentId, Integer offset) {
@@ -33,7 +31,6 @@ public class StringLayeredUtil<T> {
 	/**
 	 * 擦除字符串末位00
 	 * 
-	 * @author 张威斌<br>
 	 * @date 2017年9月28日 下午2:43:30
 	 */
 	public static String eraseEndZero(String numString) {

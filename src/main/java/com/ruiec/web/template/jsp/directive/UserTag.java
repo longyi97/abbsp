@@ -10,7 +10,6 @@ import com.ruiec.web.util.SpringUtils;
 /**
  * 用户标签
  * 
- * @author bingo<br>
  * @date 2017年10月26日 下午1:39:18
  */
 public class UserTag  extends SimpleTagSupport{
@@ -47,7 +46,6 @@ public class UserTag  extends SimpleTagSupport{
 	/**
 	 * 根据父级ID，返回版块模型
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月26日 下午1:41:45
 	 */
 	

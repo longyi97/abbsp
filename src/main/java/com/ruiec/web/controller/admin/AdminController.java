@@ -15,7 +15,6 @@ import com.ruiec.web.service.AdminService;
 /**
  * 后台管理员控制器
  * 
- * @author 钟国城<br>
  * @date 2017年10月17日 下午2:11:01
  */
 @Controller
@@ -28,7 +27,6 @@ public class AdminController extends BaseAdminController {
 	/**
 	 * 更新管理员初始页
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月8日 上午9:28:22
 	 */
 	@RequestMapping(value = "/edit")
@@ -42,7 +40,6 @@ public class AdminController extends BaseAdminController {
 	/**
 	 * 更新管理员
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月8日 上午9:28:02
 	 */
 	@RequestMapping(value = "/update", method = RequestMethod.POST)

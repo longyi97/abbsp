@@ -10,13 +10,11 @@
 	
    /**
 	* @content 给对象，创建实例化方法
-	* @author     
 	* @time 2015年8月20日 10:07:09
 	*/
 	rui_validate.prototype = {
 	   /**
 		* @content 表单初始化加载，绑定事件，准备页面结构
-		* @author      
 		* @time 2015年8月20日 10:07:09
 		*/
 		initload:function(){ 
@@ -25,7 +23,6 @@
 		   /**
 			* @content 绑定表单中，初始化“只能输入数字的文本域”keyup事件，过滤非文本数字
 			* @example verify=isNumb( 只能输入整数 ); verify=isPhone（手机号码只能输入整数)；verify=isBankCard(银行卡只能是数字)
-			* @author      
 			* @time 2015年8月20日 10:07:09
 			*/
 			$("*[verify='isNumb'] , *[verify='isPhone'] , *[verify='isBankCard']").keyup(function(event){
@@ -43,7 +40,6 @@
 		   /**
 			* @content 绑定表单中，初始化“只能输入【浮点数】的文本域”keyup事件，过滤非浮点数的字符
 			* @example verify=isFloat( 只能输入【浮点数】,其中只能有一位小数和);
-			* @author      
 			* @time 2015年8月20日 10:07:09
 			*/
 			$("*[verify='isFloat']").keyup(function(){
@@ -73,7 +69,6 @@
 		   /**
 			* @content 绑定表单中，初始化“只能输入【身份证】的文本域”keyup事件，过滤非数字和X的字符
 			* @example verify=isIdCard( 只能输入【身份证】数字和xX);
-			* @author      
 			* @time 2015年8月20日 10:07:09
 			*/
 			$("*[verify='isIdcard']").keyup(function(){
@@ -91,7 +86,6 @@
 		   /**
 			* @content 绑定表单中，初始化“只能输入【英文】的文本域”keyup事件，过滤非数字和X的字符
 			* @example verify=isEn( 只能输入【英文】a-zA-Z); verify=isABC( 只能输入【英文】a-zA-Z);
-			* @author      
 			* @time 2015年8月20日 10:07:09
 			*/ 
 			$("*[verify='isEn'],*[verify='isABC']").keyup(function(){
@@ -109,7 +103,6 @@
 		   /**
 			* @content 初始化表单提示信息
 			* @descript 由于placeholder 的属性在低版本的浏览器中不兼容，因此对这些低版本的浏览器进行了处理（其中典型便是IE8以下内核的浏览器） 
-			* @author      
 			* @time 2015年8月20日 10:07:09
 			*/ 
 			$("*[placeholder]").each(function() { 
@@ -151,7 +144,6 @@
 			
 		   /**
 			* @content 绑定focus事件,处理初始化提示信息 
-			* @author      
 			* @time 2015年8月20日 15:20:09
 			*/ 
 			$("*[placeholder],input,textarea").focus(function(){
@@ -171,7 +163,6 @@
 		},
 	   /**
         * @content 内置属性，继承与扩展
-        * @author      
         * @time 2015年8月20日 10:07:09
         */
 		InitOptions: function (user_options) {
@@ -192,7 +183,6 @@
 		},
 	   /**
         * @content 获取不同浏览器的版本号 
-        * @author      
         * @time 2015年8月20日 10:07:09
         */
 		initForm: function (user_options) {
@@ -200,14 +190,12 @@
 
 		   /**
             * @content 初始化方法参数
-            * @author      
             * @time 2015年8月20日 10:07:09
             */
 		    var rui_Validate_options = _this.InitOptions(user_options);
 
 		   /**
             * @content 获取焦点
-            * @author      
             * @time 2015年8月20日 10:07:09
             */
 		    rui_Validate_options.FormObj.find("*[verify]").focus(function () {
@@ -226,7 +214,6 @@
 
 		    /**
              * @content 失去焦点
-             * @author      
              * @time 2015年8月20日 10:07:09
              */
 		    rui_Validate_options.FormObj.find("*[verify]").blur(function () {
@@ -284,7 +271,6 @@
 		    
 		    /**
              * @content 再次验证绑定change事件，由于change事件兼容太差使用，keyup事件
-             * @author      
              * @time 2015年8月20日 10:07:09
              */ 
 		    rui_Validate_options.FormObj.find("*[verify]").keyup(function () { 
@@ -294,7 +280,6 @@
 		            if (_thisMsg != undefined && _thisMsg != "") { 
 		               /**
                         * @content 清除当前表单的错误或正确的提示信息
-                        * @author      
                         * @time 2015年8月20日 10:07:09
                         */
 		                _this.clearShowTips(rui_Validate_options, $(this));
@@ -304,7 +289,6 @@
 
 		   /**
             * @content 再次验证绑定change事件，由于change事件兼容太差使用，keyup事件
-            * @author      
             * @time 2015年8月20日 10:07:09
             */
 		    rui_Validate_options.FormObj.find("." + rui_Validate_options.SubBtn + " , input[type='submit']").eq(0).click(function () {
@@ -334,7 +318,6 @@
 		},
 	   /**
         * @content 验证表单对象的格式是否正确
-        * @author      
         * @time 2015年8月20日 10:07:09
         */
 		check_objInfo: function (obj, rui_Validate_options) {
@@ -466,7 +449,6 @@
 		}, 
 	   /**
         * @content 展示提示信息的方法
-        * @author      
         * @time 2015年8月20日 10:07:09
         */
 		ShowTips: function (rui_Validate_options, obj, msg, state) { 
@@ -560,7 +542,6 @@
 		},
 	   /**
         * @content 气泡类型的提示信息
-        * @author      
         * @param 基本属性参数 rui_Validate_options
         * @param 验证的表单对象
         * @param 验证的表单的提示信息
@@ -613,7 +594,6 @@
 		},
 	   /**
         * @content 图标加文字类型的提示信息
-        * @author      
         * @param 基本属性参数 rui_Validate_options
         * @param 验证的表单对象
         * @param 验证的表单的提示信息
@@ -642,7 +622,6 @@
 		},
 	   /**
         * @content 图标加文字类型的提示信息
-        * @author      
         * @param 基本属性参数 rui_Validate_options
         * @param 验证的表单对象
         * @param 验证的表单的提示信息
@@ -674,7 +653,6 @@
 		},
 	   /**
         * @content 图标加文字类型的提示信息
-        * @author      
         * @param 基本属性参数 rui_Validate_options
         * @param 验证的表单对象
         * @param 验证的表单的提示信息
@@ -709,7 +687,6 @@
 		},
 	   /**
         * @content 清除当前表单的错误或正确的提示信息
-        * @author      
         * @time 2015年8月20日 10:07:09
         */
 		clearShowTips: function (rui_Validate_options, obj) {
@@ -739,7 +716,6 @@
 		},
 	   /**
         * @content 提交表单进行验证
-        * @author      
         * @time 2015年8月20日 10:07:09
         */ 
 		Subvalidation: function (rui_Validate_options, obj) {
@@ -895,7 +871,6 @@
 		},
 	   /**
 		* @content 获取不同浏览器的版本号 
-		* @author      
 		* @time 2015年8月20日 10:07:09
 		*/ 
 		checkBrowserPublish: function () { 
@@ -923,7 +898,6 @@
 		},
 	   /**
         * @content 验证表单验证的不同项的值 
-        * @author      
         * @time 2015年8月20日 10:07:09
         */
 		checkVerify: function (Verify, theValue, obj, rui_Validate_options) {
@@ -1038,7 +1012,6 @@
 		},
 	   /**
         * @content 验证身份证号码 
-        * @author      
         * @time 2015年8月20日 10:07:09
         */
 		isIdcard: function (str) {
@@ -1049,7 +1022,6 @@
         * @param 开始时间
         * @param 结束时间
         * @param 截取字符串
-        * @author      
         * @time 2015年8月20日 10:07:09
         */
 		compareTime: function (_St, _Et, str) {

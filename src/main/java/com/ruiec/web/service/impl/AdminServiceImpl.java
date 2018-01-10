@@ -12,7 +12,6 @@ import com.ruiec.web.service.AdminService;
 /**
  * 管理员服务实现类
  * 
- * @author 钟国城<br>
  * @date 2017年11月8日 上午9:36:23
  */
 @Service("adminServiceImpl")
@@ -28,7 +27,6 @@ public class AdminServiceImpl extends BaseServiceImpl<Admin> implements AdminSer
 	/**
 	 * 登录用户名密码验证查询
 	 * 
-	 * @author 钟国城<br>
 	 * @date 2017年11月8日 上午9:36:10
 	 */
 	@Override

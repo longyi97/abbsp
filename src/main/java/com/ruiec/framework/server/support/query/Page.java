@@ -10,7 +10,6 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * 分页封装类
- * @author 肖学良<br>
  * Version: 1.0<br>
  * Date: 2015年12月11日
  */
@@ -40,7 +39,6 @@ public class Page implements Serializable {
 	
 	/**
 	 * 获取Page对象
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public static Page build(){
@@ -49,7 +47,6 @@ public class Page implements Serializable {
 	
 	/**
 	 * 添加过滤
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Page add(Filter filter){
@@ -59,7 +56,6 @@ public class Page implements Serializable {
 	
 	/**
 	 * 添加排序
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Page add(Sort sort){
@@ -69,7 +65,6 @@ public class Page implements Serializable {
 	
 	/**
 	 * 添加初始化路径
-	 * @author 肖学良<br>
 	 * Date: 2016年1月9日
 	 */
 	public Page add(String path){
@@ -79,7 +74,6 @@ public class Page implements Serializable {
 	
 	/**
 	 * 清除所有过滤
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Page clearFilters(){
@@ -90,7 +84,6 @@ public class Page implements Serializable {
 	
 	/**
 	 * 清除所有排序
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Page clearSorts(){
@@ -100,7 +93,6 @@ public class Page implements Serializable {
 	
 	/**
 	 * 清除：单字段排序，模糊查询，过滤集，排序集
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Page clear(){
@@ -115,7 +107,6 @@ public class Page implements Serializable {
 	
 	/**
 	 * 获取总记录数
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	@JsonProperty
@@ -125,7 +116,6 @@ public class Page implements Serializable {
 	/**
 	 * 设置总记录数
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月28日 下午3:14:47
 	 */
 	public Page setTotalCount(Long totalCount) {
@@ -138,7 +128,6 @@ public class Page implements Serializable {
 	/**
 	 * 获取第几页
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月28日 下午3:14:47
 	 */
 	@JsonProperty
@@ -154,7 +143,6 @@ public class Page implements Serializable {
 	/**
 	 * 设置第几页
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月28日 下午3:14:47
 	 */
 	public Page setPageNumber(int pageNumber) {
@@ -169,7 +157,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 获取每页最大记录数
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	@JsonProperty
@@ -178,7 +165,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 设置每页最大记录数
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Page setPageSize(int pageSize) {
@@ -194,7 +180,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 获取总页数
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	@JsonProperty
@@ -207,7 +192,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 获取模糊查询条件字段
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public String getProperty() {
@@ -215,7 +199,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 设置模糊查询条件字段
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public void setProperty(String property) {
@@ -223,7 +206,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 获取模糊查询关键字
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public String getKeyword() {
@@ -231,7 +213,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 设置模糊查询关键字
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public void setKeyword(String keyword) {
@@ -239,7 +220,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 获取排序集
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public List<Sort> getSorts() {
@@ -247,7 +227,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 获取过滤集
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public List<Filter> getFilters() {
@@ -256,7 +235,6 @@ public class Page implements Serializable {
 	
 	/**
 	 * 获取初始化路径
-	 * @author 肖学良<br>
 	 * Date: 2016年1月9日
 	 */
 	public java.util.Set<String> getPathSet() {
@@ -265,7 +243,6 @@ public class Page implements Serializable {
 
 	/**
 	 * 获取查询结果集
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	@JsonProperty
@@ -274,7 +251,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 设置查询结果集
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Page setList(List<?> list) {
@@ -283,7 +259,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 获取排序字段
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public String getSortProperty() {
@@ -291,7 +266,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 设置排序字段
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Page setSortProperty(String sortProperty) {
@@ -300,7 +274,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 获取排序字段排序方式
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Sort.SortType getSortType() {
@@ -308,7 +281,6 @@ public class Page implements Serializable {
 	}
 	/**
 	 * 设置排序字段排序方式
-	 * @author 肖学良<br>
 	 * Date: 2015年12月24日
 	 */
 	public Page setSortType(Sort.SortType sortType) {

@@ -17,7 +17,6 @@ import org.apache.commons.lang3.time.DateUtils;
 /**
  * 日期工具类
  * 
- * @author 熊华松<br>
  * Version 1.0<br>
  * Date: 2015年12月31日
  */
@@ -26,7 +25,6 @@ public class RuiecDateUtils {
 	/**
 	 * 获取当前月的第一秒
 	 * @return
-	 * @author 熊华松
 	 */
 	public static Date getMinForMonth(Date date) {
 		Calendar cal = Calendar.getInstance();
@@ -49,7 +47,6 @@ public class RuiecDateUtils {
 	/**
 	 * 获取昨天的第一秒
 	 * 
-	 * @author 杨龙香<br>
 	 * Date:2016年07月07日
 	 */
 	public static Date getFirstSecondOfYesterday(){
@@ -77,7 +74,6 @@ public class RuiecDateUtils {
 	/**
 	 * 获取昨天的最后一秒
 	 * 
-	 * @author 杨龙香<br>
 	 * Date:2016年07月07日
 	 */
 	public static Date getLastSecondOfYesterday(){
@@ -160,7 +156,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 将yyyy-MM-dd的字符串转换为日期
-	 * @author 刘立雯
 	 * Date：2016年09月06日
 	 */
 	public static Date parse_yyyy_MM_dd(String yyyyMMddString){
@@ -176,7 +171,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * yyyyMMddHHmm格式转换为日期
-	 * @author 熊华松
 	 * @param yyyyMMddHHmmString
 	 * @return
 	 * Date: 2016-06-14
@@ -194,7 +188,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * yyyyMMddHHmmss格式转换为日期
-	 * @author 熊华松
 	 * @param yyyyMMddHHmmssString
 	 * @return
 	 * Date: 2016-06-14
@@ -212,7 +205,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * ××时××分格式转换为××年××月××日 ××时××分
-	 * @author 熊华松
 	 * @param time
 	 * @return
 	 * Date: 2016-06-14
@@ -322,7 +314,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 获取昨天的日期
-	 * @author 刘立雯
 	 */
 	public static String getYesterday() {
 		Calendar cal=Calendar.getInstance();//获取当前时间
@@ -332,7 +323,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 获取本周一的日期
-	 * @author 刘立雯
 	 */
 	public static String getThisMonday() {
 		Calendar cal=Calendar.getInstance();//获取当前时间
@@ -342,7 +332,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 获取本周日的日期
-	 * @author 刘立雯
 	 */
 	public static String getThisSunday() {
 		Calendar cal=Calendar.getInstance();//获取当前时间
@@ -353,7 +342,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 获取上周一的日期
-	 * @author 刘立雯
 	 */
 	public static String getLastMonday() {
 		Calendar cal=Calendar.getInstance();//获取当前时间
@@ -364,7 +352,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 获取上周日的日期
-	 * @author 刘立雯
 	 */
 	public static String getLastSunday() {
 		Calendar cal=Calendar.getInstance();//获取当前时间
@@ -374,7 +361,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 获取本月第一天的日期
-	 * @author 刘立雯
 	 */
 	public static String getThisMonthOneDay() {
 		Calendar cal=Calendar.getInstance();//获取当前时间
@@ -384,7 +370,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 获取本月最后一天的日期
-	 * @author 刘立雯
 	 */
 	public static String getThisMonthLastDay() {
 		Calendar cal=Calendar.getInstance();//获取当前时间
@@ -396,7 +381,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 获取上月第一天的日期
-	 * @author 刘立雯
 	 */
 	public static String getLastMonthOneDay() {
 		Calendar cal=Calendar.getInstance();//获取当前时间
@@ -407,7 +391,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 获取上月最后一天的日期
-	 * @author 刘立雯
 	 */
 	public static String getLastMonthLastDay() {
 		Calendar cal=Calendar.getInstance();//获取当前时间
@@ -419,7 +402,6 @@ public class RuiecDateUtils {
 	/**
 	 * 获取某月第一天的日期
 	 * @param month 月份(yyyy-MM)
-	 * @author 刘立雯
 	 */
 	public static String getMonthOneDay(String month){
 		Calendar cal=Calendar.getInstance();
@@ -431,7 +413,6 @@ public class RuiecDateUtils {
 	/**
 	 * 获取某月最后一天的日期
 	 * @param month 月份(yyyy-MM)
-	 * @author 刘立雯
 	 */
 	public static String getMonthLastDay(String month){
 		Calendar cal=Calendar.getInstance();
@@ -444,7 +425,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * 数字转换文字月份
-	 * @author 刘立雯
 	 */
 	public static String getMonth(int i) {
 		String lastmonth="";		
@@ -492,7 +472,6 @@ public class RuiecDateUtils {
 	/**
 	 * 获取当前月的最后一秒
 	 * @return
-	 * @author 熊华松
 	 */
 	public static Date getMaxForMonth(Date date) {
 		Calendar cal = Calendar.getInstance();
@@ -521,7 +500,6 @@ public class RuiecDateUtils {
 	}
 	/**
 	 * yyyy-MM-dd
-	 * @author 肖学良<br>
 	 * Date: 2015年8月28日
 	 */
 	public static String formatYyyy_MM_dd(Date date){
@@ -530,7 +508,6 @@ public class RuiecDateUtils {
 	
 	/**
 	 * yyyy-MM-dd
-	 * @author 肖学良<br>
 	 * Date: 2015年8月28日
 	 */
 	public static String transferDate2String(Date date) {
@@ -596,7 +573,6 @@ public class RuiecDateUtils {
 	
     /**
      * 获取n天后的时间
-     * @author 刘立雯
      * 
      * @param date 开始时间
      * @param n 几天
@@ -613,7 +589,6 @@ public class RuiecDateUtils {
     
     /**
      * 求两个时间之间的时间差（不满1秒按1秒算，分、时、天同）
-     * @author 刘立雯
      * 
      * @param startTime 开始时间（减数）
      * @param endTime 结束时间（被减数）
@@ -648,7 +623,6 @@ public class RuiecDateUtils {
      * date2=2017-07-25; 
      * date2-date1返回5天
      * date1-date2则返回0；
-     * @author 刘立雯
      * 
      * @param startTime 开始时间（减数）
      * @param endTime 结束时间（被减数）
@@ -681,7 +655,6 @@ public class RuiecDateUtils {
     
     /**
      * 根据年月获取当月有几周
-     * @author 刘立雯
      * @param str 2017-07
      * Date：2017年07月12日
      */
@@ -700,7 +673,6 @@ public class RuiecDateUtils {
     
     /**  
      * 根据日期字符串判断当月第几周  
-     * @author 刘立雯
      * @param startDate  
      * Date：2017年07月12日
      */  
@@ -714,7 +686,6 @@ public class RuiecDateUtils {
     
     /**
      * 根据某年或某月第几周获取对应周第一天和最后一天日期
-     * @author 刘立雯
      * @param year 2017
      * @param month 7
      * @param week 3
@@ -750,7 +721,6 @@ public class RuiecDateUtils {
     
     /**
      * 将日期调整到当天最后一秒
-     * @author 刘立雯
      * Date：2017年07月25日
      */
     public static Date getDateLastSecond(Date date) {
@@ -763,7 +733,6 @@ public class RuiecDateUtils {
     /**
      * 获取某月所有周的周一和周日日期（按周六算：周六在哪个月所在周就算是那月的周）
      * @param month 月份（yyyy-MM）
-     * @author 刘立雯
      * Date：2017年08月05日
      * @throws ParseException 
      */
@@ -810,7 +779,6 @@ public class RuiecDateUtils {
     
     /**
      * 根据日期获取所在周的周一和周日日期
-     * @author 刘立雯
      * Date：2017年8月5日
      */
     public static String getWeekDate(Date date) {
@@ -834,7 +802,6 @@ public class RuiecDateUtils {
     
     /**
      * 根据日期获取所在周的周一的日期
-     * @author 王伟
      * Date：2017年12月20日
      */
     public static String getWeekDateOne(Date date) {
@@ -854,7 +821,6 @@ public class RuiecDateUtils {
 	}
     /**
      * 获取到对应的date类型，查询出这个日期是周几，
-     * @author 王伟
      * Date：2017年12月20日
      */
     public static String getWeekOfDate(Date dt) {

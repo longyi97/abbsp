@@ -32,7 +32,6 @@ import com.ruiec.framework.web.file.FileClient;
 /**
  * 文件上传过滤器
  * 
- * @author bingo<br>
  * @date 2017年12月8日 上午10:37:47
  */
 public class FileUploadWangEditor implements Filter {

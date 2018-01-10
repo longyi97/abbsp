@@ -11,7 +11,6 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 /**
  * print url interceptor
- * @author 张威斌<br>
  * @date 2017年9月29日 上午10:25:17
  */
 public class PrintUrlInterceptor implements HandlerInterceptor {

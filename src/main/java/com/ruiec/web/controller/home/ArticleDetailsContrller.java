@@ -37,7 +37,6 @@ import com.ruiec.web.service.UserService;
 /**
  * 帖子详情控制器
  * 
- * @author 王伟
  * @date 2017年12月16日 下午7:56:55
  */
 @Controller
@@ -64,7 +63,6 @@ public class ArticleDetailsContrller extends BaseAdminController {
 	/**
 	 * 保存回复信息
 	 * 
-	 * @author 王伟<br>
 	 * @date 2017年10月30日 下午4:58:04
 	 */
 	@RequestMapping(value = "/addsave")
@@ -80,7 +78,6 @@ public class ArticleDetailsContrller extends BaseAdminController {
 	/***
 	 * 通过id删除回复信息
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月16日 下午7:57:13
 	 */
 	@RequestMapping(value = "/delete")
@@ -97,7 +94,6 @@ public class ArticleDetailsContrller extends BaseAdminController {
 	/**
 	 * 删除回复信息，（修改回复信息）
 	 * 
-	 * @author 王伟<br>
 	 * @date 2017年10月27日 下午5:36:24
 	 */
 	@RequestMapping(value = "/updatedelete")
@@ -114,7 +110,6 @@ public class ArticleDetailsContrller extends BaseAdminController {
 	/**
 	 * 跳转到回复初始化页面
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月16日 下午7:57:13
 	 */
 	@RequestMapping(value = "/articleReplyInfo")
@@ -127,7 +122,6 @@ public class ArticleDetailsContrller extends BaseAdminController {
 	/**
 	 * 保存回复信息
 	 * 
-	 * @author 王伟<br>
 	 * @date 2017年10月30日 下午4:58:04
 	 */
 	@RequestMapping(value = "/addsave1")
@@ -162,7 +156,6 @@ public class ArticleDetailsContrller extends BaseAdminController {
 	/**
 	 * 分页后的详情
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月14日 下午7:21:03
 	 */
 	@RequestMapping(value = "/view")

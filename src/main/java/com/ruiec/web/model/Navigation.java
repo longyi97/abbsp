@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * 导航实体
- * @author 刘立雯
  * Date：2017年07月06日
  */
 public class Navigation implements Serializable {

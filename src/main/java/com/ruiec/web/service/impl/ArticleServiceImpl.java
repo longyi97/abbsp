@@ -28,7 +28,6 @@ import com.ruiec.web.service.UserPointsService;
 /**
  * 帖子接口实现
  * 
- * @author 王伟<br>
  * @date 2017年12月18日 下午2:59:20
  */
 @Service("articleServiceImpl")
@@ -56,7 +55,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 判断帖子数量
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月18日 下午2:59:55
 	 */
 	@Override
@@ -68,7 +66,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 连表查询回复
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月18日 下午2:59:55
 	 */
 	@Override
@@ -79,7 +76,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 直接删除帖子
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月18日 下午2:59:55
 	 */
 	@Override
@@ -93,7 +89,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 通过用户ID获取所有该用户的帖子
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年10月30日 下午2:57:37
 	 */
 	public List<Article> selectByUserAllArticle(Integer userId) {
@@ -103,7 +98,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 通过时间段获取帖子数量（版块）
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年10月31日 下午2:31:59
 	 */
 	@Override
@@ -115,7 +109,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 用户发表的帖子总数
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月1日 下午1:46:06
 	 */
 	public Integer selectByUserAllArticleCount(Integer userId) {
@@ -125,7 +118,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 获取版块下帖子数量
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月6日 上午11:21:08
 	 */
 	@Override
@@ -137,7 +129,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 获取带有图片的帖子
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月8日 下午3:24:18
 	 */
 	public List<Article> selectShufflingArticle(Integer moduleId) {
@@ -147,7 +138,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 增加点击量，
 	 * 
-	 * @author 王伟 date：
 	 * @date 2017年12月18日 下午2:59:55
 	 */
 	@Override
@@ -158,7 +148,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 通过顶级版块ID获取所有帖子
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年11月11日 上午10:28:30
 	 */
 	@Override
@@ -172,7 +161,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 帖子假删除（水贴）
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月8日 下午4:49:04
 	 */
 	@Override
@@ -187,7 +175,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 保存帖子
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月1日 下午3:35:02
 	 */
 	@Override
@@ -220,7 +207,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 保存帖子
 	 * 
-	 * @author bingo<br>
 	 * @date 2017年12月1日 下午3:35:02
 	 */
 	@Override
@@ -243,7 +229,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 通过帖子id删除对应的评论,添加事务，帖子回复删除时才能删除帖子
 	 * 
-	 * @author Jerry<br>
 	 * @modify bingo<br>
 	 * @date 2017年12月18日 下午2:59:55
 	 */
@@ -260,7 +245,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 通过id去查询帖子名称
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月18日 下午2:59:55
 	 */
 	@Override
@@ -271,7 +255,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 根据发帖人搜索
 	 * 
-	 * @author zhongguocheng<br>
 	 * @date 2017年11月16日 下午10:14:37
 	 */
 	public List<Article> selectByArticleAllUser(ArticleDTO articleDTO) {
@@ -281,7 +264,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 分页查询(通过回复数量排序)
 	 * 
-	 * @author 王伟<br>
 	 * @date 2017年12月18日 下午2:59:55
 	 */
 	@Override
@@ -292,7 +274,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 通过数组批量假删除
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月18日 下午2:59:55
 	 */
 	@Override
@@ -303,7 +284,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 输入框输入查询
 	 * 
-	 * @author 王伟
 	 * @date 2017年12月18日 下午2:59:55
 	 */
 	@Override
@@ -313,7 +293,6 @@ public class ArticleServiceImpl extends BaseServiceImpl<Article> implements Arti
 	/**
 	 * 用户发表的帖子火帖总数
 	 * 
-	 * @author 王伟<br>
 	 * @date 2017年12月21日 下午1:46:06
 	 */
 	@Override
